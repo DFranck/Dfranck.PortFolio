@@ -4,7 +4,7 @@ header{
   text-align: center;
   color: set.$black1;
   h1{
-    font-family: set.$fonth1;
+    font-family: set.$fontTitle;
     width: fit-content;
     padding-top: 100px;
     margin: 0 auto 10px;
@@ -49,13 +49,7 @@ header{
     }
   }
   
-  h2{
-    position: relative;
-    font-family: set.$fontTitle;
-    font-size: 2rem;
-    margin: 50px 0 100px;
-    letter-spacing: 5px;
-  }
+  
   .header-bot{
     background: rgb(45, 45, 45);
     padding: 50px 0;

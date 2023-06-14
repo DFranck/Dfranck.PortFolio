@@ -39,36 +39,42 @@ links.forEach(link => {
 //----------------------------SECTION PROJETS-------------------------------------
 
 const projets = [
+  
+  {
+    titre: "Gaming Campus",
+    image: "./assets/img/Gaming Campus.png",
+    description: "Intégration niveau profesionnel du site Gaming Campus réalisé lors de la formation Mastering-Front-End",
+    technologies: ["HTML", "CSS"],
+    lienGitHub: "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus",
+    lienProjet: ""
+  },
   {
     titre: "Projet 1",
     image: "chemin_vers_image1.jpg",
     description: "Description du projet 1...",
     technologies: ["HTML", "CSS", "JavaScript"],
-    lienGitHub: "lien_vers_github_1",
-    lienProjet: "lien_vers_projet_1"
-  },
-  {
-    titre: "Projet 2",
-    image: "chemin_vers_image2.jpg",
-    description: "Description du projet 2...",
-    technologies: ["Python", "Django"],
-    lienGitHub: "lien_vers_github_2",
-    lienProjet: "lien_vers_projet_2"
+    lienGitHub: "",
+    lienProjet: ""
   },
   // Ajoutez autant de projets que vous le souhaitez...
 ];
 
-const sectionProjets = document.getElementById('projets');
+const sectionProjets = document.getElementById('projet-container');
 
 projets.forEach(projet => {
   const html = `
     <div class="projet">
       <h3 class="projet-titre">${projet.titre}</h3>
+      <div class=img-container>
       <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
+      </div>
       <p class="projet-description">${projet.description}</p>
-      <p class="projet-technologies">Technologies utilisées: ${projet.technologies.join(', ')}</p>
-      <p><a href="${projet.lienGitHub}" class="projet-lien">Code Source</a></p>
-      <p><a href="${projet.lienProjet}" class="projet-lien">Voir le Projet</a></p>
+      <h4>Technologies utilisées:</h4>
+      <ul class="projet-technologies"> 
+      ${projet.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      </ul>
+      <h5>${projet.lienGitHub ? `<a href="${projet.lienGitHub}" class="projet-lien" target="_blank"><i class="fa-brands fa-github" id="github"></i>Code Source</a>` : ''}</h5>
+      <h5>${projet.lienProjet ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank">Voir le Projet</a>` : ''}</h5>
     </div>
   `;
   sectionProjets.innerHTML += html;

@@ -15,6 +15,14 @@
 * body a {
   text-decoration: none;
 }
+* body h2 {
+  text-transform: uppercase;
+  position: relative;
+  font-family: baloo;
+  font-size: 2rem;
+  margin: 50px 0 100px;
+  letter-spacing: 5px;
+}
 
 @font-face {
   font-family: "white on black";
@@ -116,13 +124,6 @@ header h1 span:hover {
     transform: scale(1.5) translate3d(4px, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
 }
-header h2 {
-  position: relative;
-  font-family: "baloo";
-  font-size: 2rem;
-  margin: 50px 0 100px;
-  letter-spacing: 5px;
-}
 header .header-bot {
   background: rgb(45, 45, 45);
   padding: 50px 0;
@@ -173,11 +174,6 @@ header .header-bot .description #technologies {
   text-align: center;
   padding: 50px 0;
 }
-.projets h2 {
-  position: relative;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
 .projets h2::before {
   position: absolute;
   content: "";
@@ -188,4 +184,63 @@ header .header-bot .description #technologies {
   width: 50vw;
   height: 3px;
   transform: translateX(-50%);
+}
+.projets #projet-container {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projets #projet-container .projet {
+  background: rgba(245, 245, 245, 0.05);
+  color: whitesmoke;
+  width: 40vw;
+  margin: 50px auto;
+  transition: 1s;
+}
+.projets #projet-container .projet:hover {
+  box-shadow: 0px 0px 20px 20px whitesmoke;
+}
+.projets #projet-container .projet h3 {
+  font-family: "white on black";
+  font-size: 2rem;
+  margin: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.projets #projet-container .projet .img-container {
+  overflow: auto;
+  margin: 0 auto 20px;
+  width: 80%;
+  height: 200px;
+}
+.projets #projet-container .projet .img-container img {
+  width: 100%;
+  height: auto;
+}
+.projets #projet-container .projet p {
+  margin: 20px auto;
+  width: 80%;
+}
+.projets #projet-container .projet h4 {
+  font-size: 1.1rem;
+}
+.projets #projet-container .projet ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projets #projet-container .projet ul li {
+  color: yellowgreen;
+}
+.projets #projet-container .projet h5 {
+  margin: 30px 0;
+}
+.projets #projet-container .projet h5 a {
+  color: whitesmoke;
+}
+.projets #projet-container .projet h5 a i {
+  margin-right: 10px;
 }/*# sourceMappingURL=index.css.map */

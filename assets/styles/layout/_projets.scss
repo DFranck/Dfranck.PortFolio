@@ -6,9 +6,6 @@
     text-align: center;
     padding: 50px 0;
     h2{
-        position: relative;
-        text-transform: uppercase;
-        margin-bottom: 50px;
         &::before{
             position: absolute;
             content: "";
@@ -20,5 +17,65 @@
             height: 3px;
             transform: translateX(-50%);
             }
+    }
+    #projet-container{
+        width: 95vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .projet{
+            background: rgba(245, 245, 245, 0.05);
+            color: whitesmoke;
+            width: 40vw;
+            margin: 50px auto;
+            transition: 1s;
+            &:hover{
+                box-shadow: 0px 0px 20px 20px whitesmoke;
+                
+            }
+            h3{
+                font-family: set.$fontTitle;
+                font-size: 2rem;
+                margin: 50px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .img-container{
+                overflow: auto;
+                margin: 0 auto 20px;
+                width: 80%;
+                height: 200px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            p{
+                margin: 20px auto;
+                width: 80%;
+            }
+            h4{
+                font-size: 1.1rem;
+            }
+            ul{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                li{
+                    color: yellowgreen;
+                }
+            }
+            h5{
+                margin: 30px 0;
+                a{
+                    color: whitesmoke;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
     }
 }
