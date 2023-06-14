@@ -55,29 +55,18 @@ header{
     font-size: 2rem;
     margin: 50px 0 100px;
     letter-spacing: 5px;
-    &::before{
-      position: absolute;
-      content: "";
-      top: 100%;
-      left: 50%;
-      background: yellowgreen;
-      opacity: 1;
-      width: 400px;
-      height: 3px;
-      transform: translateX(-50%);
-    }
   }
   .header-bot{
     background: rgb(45, 45, 45);
     padding: 50px 0;
     .description{
       color: whitesmoke;
-      width: 60%;
+      width: 80%;
       margin:  auto;
       #introduction{
-        font-size: 1.1rem;
-        margin-bottom: 50px;
-        line-height: 40px;
+        
+        margin-bottom: 20px;
+        
       }
       #technologies{
         margin-top: 30px;

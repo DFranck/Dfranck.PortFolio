@@ -8,6 +8,10 @@
   font-family: baloo, sans-serif;
   background: whitesmoke;
 }
+* body p {
+  line-height: 40px;
+  font-size: 1.1rem;
+}
 * body a {
   text-decoration: none;
 }
@@ -40,6 +44,7 @@ nav .out-link a {
 }
 nav ul {
   position: relative;
+  text-transform: uppercase;
   gap: 4vw;
 }
 nav ul li {
@@ -118,30 +123,17 @@ header h2 {
   margin: 50px 0 100px;
   letter-spacing: 5px;
 }
-header h2::before {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 50%;
-  background: yellowgreen;
-  opacity: 1;
-  width: 400px;
-  height: 3px;
-  transform: translateX(-50%);
-}
 header .header-bot {
   background: rgb(45, 45, 45);
   padding: 50px 0;
 }
 header .header-bot .description {
   color: whitesmoke;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 header .header-bot .description #introduction {
-  font-size: 1.1rem;
-  margin-bottom: 50px;
-  line-height: 40px;
+  margin-bottom: 20px;
 }
 header .header-bot .description #technologies {
   margin-top: 30px;
@@ -153,11 +145,47 @@ header .header-bot .description #technologies {
 }
 
 .a-propos {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
 }
 .a-propos .a-propos-content h2 {
+  position: relative;
   text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.a-propos .a-propos-content h2::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  background: yellowgreen;
+  opacity: 1;
+  width: 50vw;
+  height: 3px;
+  transform: translateX(-50%);
+}
+
+.projets {
+  background: rgb(45, 45, 45);
+  color: whitesmoke;
+  text-align: center;
+  padding: 50px 0;
+}
+.projets h2 {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.projets h2::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  background: yellowgreen;
+  opacity: 1;
+  width: 50vw;
+  height: 3px;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=index.css.map */

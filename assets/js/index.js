@@ -36,3 +36,40 @@ links.forEach(link => {
   });
 });
 
+//----------------------------SECTION PROJETS-------------------------------------
+
+const projets = [
+  {
+    titre: "Projet 1",
+    image: "chemin_vers_image1.jpg",
+    description: "Description du projet 1...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    lienGitHub: "lien_vers_github_1",
+    lienProjet: "lien_vers_projet_1"
+  },
+  {
+    titre: "Projet 2",
+    image: "chemin_vers_image2.jpg",
+    description: "Description du projet 2...",
+    technologies: ["Python", "Django"],
+    lienGitHub: "lien_vers_github_2",
+    lienProjet: "lien_vers_projet_2"
+  },
+  // Ajoutez autant de projets que vous le souhaitez...
+];
+
+const sectionProjets = document.getElementById('projets');
+
+projets.forEach(projet => {
+  const html = `
+    <div class="projet">
+      <h3 class="projet-titre">${projet.titre}</h3>
+      <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
+      <p class="projet-description">${projet.description}</p>
+      <p class="projet-technologies">Technologies utilisées: ${projet.technologies.join(', ')}</p>
+      <p><a href="${projet.lienGitHub}" class="projet-lien">Code Source</a></p>
+      <p><a href="${projet.lienProjet}" class="projet-lien">Voir le Projet</a></p>
+    </div>
+  `;
+  sectionProjets.innerHTML += html;
+});
