@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    body{
+        font-family: baloo, sans-serif;
+        background: whitesmoke;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+@font-face {
+    font-family: "white on black";
+    src: url(../fonts/whiteonblack/whiteonblack.ttf );
+}
+
+@font-face {
+    font-family: 'baloo';
+    src: url('../fonts/baloo/Baloo2-VariableFont_wght.ttf');
+}
+
+$fonth1: "white on black";
+$fontTitle: "baloo";
+$black1: rgb(45, 45, 45);

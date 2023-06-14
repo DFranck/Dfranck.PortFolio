@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+* body {
+  font-family: baloo, sans-serif;
+  background: whitesmoke;
+}
+* body a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "white on black";
+  src: url(../fonts/whiteonblack/whiteonblack.ttf);
+}
+@font-face {
+  font-family: "baloo";
+  src: url("../fonts/baloo/Baloo2-VariableFont_wght.ttf");
+}
+nav {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  padding: 15px 30px;
+}
+nav .in-link {
+  display: flex;
+  justify-content: start;
+}
+nav .out-link {
+  display: flex;
+  justify-content: end;
+}
+nav .out-link a {
+  font-size: 2rem;
+}
+nav ul {
+  position: relative;
+  gap: 4vw;
+}
+nav ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+nav ul li:hover {
+  transform: scale(1.5);
+}
+nav ul li a {
+  transition: 0.2s;
+  color: rgb(45, 45, 45);
+}
+nav ul .underline {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 70px;
+  background: yellowgreen;
+  transition: 0.1s;
+}
+
+header {
+  text-align: center;
+  color: rgb(45, 45, 45);
+}
+header h1 {
+  font-family: "white on black";
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 100px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+}
+header h1 span:nth-child(1),
+header h1 span:nth-child(8) {
+  font-size: 7rem;
+}
+header h1 span:nth-child(7) {
+  display: inline-block;
+  width: 2rem;
+}
+header h1 span {
+  cursor: pointer;
+  transition: 0.2s;
+}
+header h1 span:hover {
+  color: yellowgreen;
+  background: whitesmoke;
+  transform: scale(1.5);
+  animation: shakeLetter 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+@keyframes shakeLetter {
+  10%, 90% {
+    transform: scale(1.5) translate3d(-1px, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  20%, 80% {
+    transform: scale(1.5) translate3d(2px, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  30%, 50%, 70% {
+    transform: scale(1.5) translate3d(-4px, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  40%, 60% {
+    transform: scale(1.5) translate3d(4px, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+}
+header h2 {
+  position: relative;
+  font-family: "baloo";
+  font-size: 2rem;
+  margin: 50px 0 100px;
+  letter-spacing: 5px;
+}
+header h2::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  background: yellowgreen;
+  opacity: 1;
+  width: 400px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+header .header-bot {
+  background: rgb(45, 45, 45);
+  padding: 50px 0;
+}
+header .header-bot .description {
+  color: whitesmoke;
+  width: 60%;
+  margin: auto;
+}
+header .header-bot .description #introduction {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+header .header-bot .description #technologies {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: yellowgreen;
+}
+
+.a-propos {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+.a-propos .a-propos-content h2 {
+  text-transform: uppercase;
+}/*# sourceMappingURL=index.css.map */

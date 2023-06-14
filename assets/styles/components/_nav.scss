@@ -1,0 +1,48 @@
+@use "../settings" as set;
+
+nav {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  padding: 15px 30px;
+  .in-link{
+    display: flex;
+    justify-content: start;
+  }
+  .out-link{
+    display: flex;
+    justify-content: end;
+    a{
+      font-size: 2rem;
+    }
+  }
+  ul {
+    position: relative;
+    gap: 4vw;
+    li {
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: .2s;
+      font-weight: bold;
+      
+      &:hover {
+        transform: scale(1.5);
+      }
+      a {
+        transition: .2s;
+        color: set.$black1;
+      }
+    }
+    
+    .underline {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 3px;
+      width: 70px;
+      background: yellowgreen;
+      transition: .1s;
+    }
+  }
+}
