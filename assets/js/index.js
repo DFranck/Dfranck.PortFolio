@@ -39,23 +39,32 @@ links.forEach(link => {
 //----------------------------SECTION PROJETS-------------------------------------
 
 const projets = [
-  
+  {
+    titre: "Le Resto",
+    image: "./assets/img/Le Resto.png",
+    description: `Cette réalisation, qui fait partie de ma formation "Mastering-Front-End", met en évidence une maîtrise avancée des technologies CSS et SASS. Elle intègre l'utilisation de mixins et de variables CSS, ce qui renforce la cohérence du design et facilite la maintenance du code. Ce travail a été effectué en SASS, un préprocesseur CSS, démontrant ainsi une approche professionnelle du développement web.`,
+    technologies: ["HTML", "CSS", "SASS",],
+    lienGitHub: "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP2",
+    lienProjet: ""
+  },
+  {
+    titre: "La montagne",
+    image: "./assets/img/La montagne.png",
+    description: `Cette intégration de ma formation "Mastering-Front-End" présente une utilisation avancée des technologies CSS et SASS. Il intègre les mixins et les variables CSS, contribuant à la cohérence du design et à la facilité de maintenance du code. ce dernier a été réalisé en SASS, un préprocesseur CSS, attestant d'une approche professionnelle du développement web.`,
+    technologies: ["HTML", "CSS", "SASS",],
+    lienGitHub: "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP1",
+    lienProjet: ""
+  },
   {
     titre: "Gaming Campus",
     image: "./assets/img/Gaming Campus.png",
-    description: "Intégration niveau profesionnel du site Gaming Campus réalisé lors de la formation Mastering-Front-End",
+    description: `J'ai eu le plaisir lors de ma formation "Mastering-Front-End" de travailler sur le projet d'intégration du le Gaming Campus, une école dédiée aux jeux vidéo et à l'esport. J'ai utilisé HTML et CSS pour réaliser l'intégration de cette interface. J'ai également mis en œuvre les techniques de Responsive Design pour assurer une excellente expérience utilisateur sur tous les types d'appareils, qu'il s'agisse d'ordinateurs de bureau, de tablettes ou de smartphones.`,
     technologies: ["HTML", "CSS"],
     lienGitHub: "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus",
     lienProjet: ""
   },
-  {
-    titre: "Projet 1",
-    image: "chemin_vers_image1.jpg",
-    description: "Description du projet 1...",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    lienGitHub: "",
-    lienProjet: ""
-  },
+  
+  
   // Ajoutez autant de projets que vous le souhaitez...
 ];
 
@@ -74,7 +83,7 @@ projets.forEach(projet => {
       ${projet.technologies.map(tech => `<li>${tech}</li>`).join('')}
       </ul>
       <h5>${projet.lienGitHub ? `<a href="${projet.lienGitHub}" class="projet-lien" target="_blank"><i class="fa-brands fa-github" id="github"></i>Code Source</a>` : ''}</h5>
-      <h5>${projet.lienProjet ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank">Voir le Projet</a>` : ''}</h5>
+      <h5>${projet.lienProjet ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank">Version déployée</a>` : ''}</h5>
     </div>
   `;
   sectionProjets.innerHTML += html;
