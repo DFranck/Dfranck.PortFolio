@@ -24,6 +24,28 @@
     }
 }
 
+#go-top{
+    content: "";
+    position: fixed;
+    background: rgba(45, 45, 45, 0.2);
+    // background: rgba(245, 245, 245, 0.2);
+    color: whitesmoke;
+    // color: rgb(45, 45, 45);
+    font-size: 3rem;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50px;
+    top: 86vh;
+    left: 92vw;
+    transition: .5s;
+    visibility: hidden;
+    &:hover{
+        transform: scale(1.2);
+        background: yellowgreen;
+    }
+}
+
 @font-face {
     font-family: "white on black";
     src: url(../fonts/whiteonblack/whiteonblack.ttf );
