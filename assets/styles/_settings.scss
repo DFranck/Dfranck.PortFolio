@@ -36,10 +36,13 @@
     height: 75px;
     border: none;
     border-radius: 50px;
-    top: 86vh;
-    left: 92vw;
+    top: 86%;
+    left: 91%;
     transition: .5s;
     visibility: hidden;
+    a{
+        color: whitesmoke;
+    }
     &:hover{
         transform: scale(1.2);
         background: yellowgreen;

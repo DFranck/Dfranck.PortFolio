@@ -8,7 +8,7 @@ const profession = "Front-End & Code Créatif";
 const introduction = "Découvrez le parcours inspirant de Franck Dufournet, un passionné du développement web en pleine reconversion professionnelle suite à un accident du travail. Son site offre un aperçu fascinant de son talent en HTML, CSS et SASS, et son engagement indéfectible à se perfectionner constamment. Explorez ses projets, appréciez son travail, et connectez-vous avec lui sur GitHub et LinkedIn pour un aperçu plus détaillé de sa transition réussie vers une nouvelle passion.";
 const technologies = ["HTML", "CSS",  "SASS", "Git","Github","SEO","Responsive", "JavaScript", "REACT"];
 
-// Trouver les éléments
+const scrollValue = 500;
 const nomElement = document.querySelector("#nom");
 const professionElement = document.querySelector("#profession");
 const introductionElement = document.querySelector("#introduction");
@@ -19,7 +19,6 @@ nomElement.innerHTML = nomSpans;
 professionElement.textContent = profession;
 introductionElement.textContent = introduction;
 
-// Créer et ajouter des éléments de liste pour les technologies
 for (let technology of technologies) {
   let li = document.createElement("li");
   li.textContent = technology;
@@ -64,7 +63,7 @@ const projets = [
   },
   
   
-  // Ajoutez autant de projets que vous le souhaitez...
+
 ];
 
 const sectionProjets = document.getElementById('projet-container');
@@ -88,6 +87,17 @@ projets.forEach(projet => {
   sectionProjets.innerHTML += html;
 });
 
-window.addEventListener("scroll", (e)=>{
-  console.log(e.srcollX);
-})
+
+
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+
+  if (scrollPosition > scrollValue) {
+      goTop.style.visibility = 'visible';
+    }else {
+        goTop.style.visibility = 'hidden';
+    }
+});
+
