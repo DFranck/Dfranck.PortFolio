@@ -12,6 +12,16 @@
   line-height: 40px;
   font-size: 1.1rem;
 }
+@media screen and (max-width: 900px) {
+  * body p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  * body p {
+    font-size: 0.8rem;
+  }
+}
 * body a {
   text-decoration: none;
 }
@@ -22,6 +32,18 @@
   font-size: 2rem;
   margin: 50px 0 100px;
   letter-spacing: 5px;
+}
+@media screen and (max-width: 900px) {
+  * body h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  * body h2 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
 }
 
 #go-top {
@@ -38,6 +60,11 @@
   left: 91%;
   transition: 0.5s;
   visibility: hidden;
+}
+@media screen and (max-width: 900px) {
+  #go-top {
+    left: 85%;
+  }
 }
 #go-top a {
   color: whitesmoke;
@@ -71,7 +98,12 @@ nav .out-link {
   justify-content: end;
 }
 nav .out-link a {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 550px) {
+  nav .out-link a {
+    font-size: 1.1rem;
+  }
 }
 nav ul {
   position: relative;
@@ -83,6 +115,16 @@ nav ul li {
   cursor: pointer;
   transition: 0.2s;
   font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  nav ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  nav ul li {
+    font-size: 0.9rem;
+  }
 }
 nav ul li:hover {
   transform: scale(1.5);
@@ -115,9 +157,31 @@ header h1 {
   align-items: center;
   font-size: 5rem;
 }
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
 header h1 span:nth-child(1),
 header h1 span:nth-child(8) {
   font-size: 7rem;
+}
+@media screen and (max-width: 900px) {
+  header h1 span:nth-child(1),
+  header h1 span:nth-child(8) {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header h1 span:nth-child(1),
+  header h1 span:nth-child(8) {
+    font-size: 2rem;
+  }
 }
 header h1 span:nth-child(7) {
   display: inline-block;
@@ -195,9 +259,15 @@ header .header-bot .description #technologies {
   border-bottom: 30px solid yellowgreen;
   box-shadow: inset 0px 1px 11px 4px yellowgreen;
   border-radius: 300px;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   margin: 50px auto;
+}
+@media screen and (max-width: 900px) {
+  .a-propos .photo-a-propos {
+    width: 250px;
+    height: 250px;
+  }
 }
 .a-propos .photo-a-propos img {
   border: 2px solid yellowgreen;
@@ -250,9 +320,20 @@ footer .footer-container ul li a {
 .projets #projet-container .projet {
   background: rgba(245, 245, 245, 0.05);
   color: whitesmoke;
-  width: 40vw;
+  width: 40%;
   margin: 50px auto;
   transition: 1s;
+}
+@media screen and (max-width: 900px) {
+  .projets #projet-container .projet {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .projets #projet-container .projet {
+    width: 90%;
+    margin-top: 0;
+  }
 }
 .projets #projet-container .projet:hover {
   box-shadow: 0px 0px 20px 20px whitesmoke;

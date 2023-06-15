@@ -9,6 +9,12 @@
         p{
             line-height: 40px;
             font-size: 1.1rem;
+            @media screen and (max-width: 900px) {
+                font-size: 1rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: .8rem;
+            }
         }
         a{
             text-decoration: none;
@@ -20,6 +26,14 @@
             font-size: 2rem;
             margin: 50px 0 100px;
             letter-spacing: 5px;
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: .9rem;
+                letter-spacing: 2px;
+                margin-top: 30px;
+            }
           }
     }
 }
@@ -40,6 +54,9 @@
     left: 91%;
     transition: .5s;
     visibility: hidden;
+    @media screen and (max-width: 900px) {
+      left: 85%;
+    }
     a{
         color: whitesmoke;
     }

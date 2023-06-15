@@ -29,9 +29,13 @@
         border-bottom: 30px solid yellowgreen;
         box-shadow: inset 0px 1px 11px 4px yellowgreen;
         border-radius: 300px;
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
         margin: 50px auto;
+        @media screen and (max-width: 900px) {
+            width: 250px;
+            height: 250px;
+        }
         img{
             border: 2px solid yellowgreen;
         }
