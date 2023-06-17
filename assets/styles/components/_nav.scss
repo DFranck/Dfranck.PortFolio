@@ -6,18 +6,19 @@ nav {
   grid-template-columns: 80% 20%;
   align-items: center;
   padding: 15px 30px;
-  
-  .in-link{
+  z-index: 20;
+
+  .in-link {
     display: flex;
     justify-content: start;
   }
-  .out-link{
+  .out-link {
     display: flex;
     justify-content: end;
-    a{
+    a {
       font-size: 1.5rem;
       @media screen and (max-width: 550px) {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
       }
     }
   }
@@ -28,23 +29,23 @@ nav {
     li {
       font-size: 1.2rem;
       cursor: pointer;
-      transition: .2s;
+      transition: 0.2s;
       font-weight: bold;
       @media screen and (max-width: 900px) {
-      font-size: 1rem;
+        font-size: 1rem;
       }
       @media screen and (max-width: 550px) {
-      font-size: .9rem;
+        font-size: 0.9rem;
       }
       &:hover {
         transform: scale(1.5);
       }
       a {
-        transition: .2s;
+        transition: 0.2s;
         color: set.$black1;
       }
     }
-    
+
     .underline {
       position: absolute;
       bottom: -10px;
@@ -52,7 +53,7 @@ nav {
       height: 3px;
       width: 70px;
       background: yellowgreen;
-      transition: .1s;
+      transition: 0.1s;
     }
   }
 }

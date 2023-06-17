@@ -1,92 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    body{
-        font-family: baloo, sans-serif;
-        background: whitesmoke;
-        
-        p{
-            line-height: 40px;
-            font-size: 1.1rem;
-            @media screen and (max-width: 900px) {
-                font-size: 1rem;
-            }
-            @media screen and (max-width: 550px) {
-                font-size: .8rem;
-            }
-        }
-        a{
-            text-decoration: none;
-        }
-        h2{
-            text-transform: uppercase;
-            position: relative;
-            font-family: baloo;
-            font-size: 2rem;
-            margin: 50px 0 100px;
-            letter-spacing: 5px;
-            @media screen and (max-width: 900px) {
-                font-size: 1.5rem;
-            }
-            @media screen and (max-width: 550px) {
-                font-size: .9rem;
-                letter-spacing: 2px;
-                margin-top: 30px;
-            }
-          }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  cursor: none;
+  body {
+    font-family: baloo, sans-serif;
+    background: whitesmoke;
+    position: relative;
+    p {
+      line-height: 40px;
+      font-size: 1.1rem;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 0.8rem;
+      }
     }
+
+    a {
+      text-decoration: none;
+      z-index: 20;
+      position: relative;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      position: relative;
+      font-family: baloo;
+      font-size: 2rem;
+      margin: 50px 0 100px;
+      letter-spacing: 5px;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
-#go-top{
-    content: "";
-    position: fixed;
-    background: rgba(45, 45, 45, 0.2);
-    // background: rgba(245, 245, 245, 0.2);
+.mouse {
+  height: 15px;
+  width: 15px;
+  background: yellowgreen;
+  //   mix-blend-mode: multiply;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.mouse-follow {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: pink;
+  //   mix-blend-mode: multiply;
+  position: absolute;
+  transition: 0.2s ease-out;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#go-top {
+  content: "";
+  position: fixed;
+  background: rgba(45, 45, 45, 0.2);
+  // background: rgba(245, 245, 245, 0.2);
+  color: whitesmoke;
+  // color: rgb(45, 45, 45);
+  font-size: 3rem;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50px;
+  top: 86%;
+  left: 91%;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 20;
+
+  // mix-blend-mode: ;
+  @media screen and (max-width: 900px) {
+    left: 85%;
+  }
+
+  @media screen and (max-width: 550px) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  a {
     color: whitesmoke;
-    // color: rgb(45, 45, 45);
-    font-size: 3rem;
-    width: 75px;
-    height: 75px;
-    border: none;
-    border-radius: 50px;
-    top: 86%;
-    left: 91%;
-    transition: .5s;
-    visibility: hidden;
-    // mix-blend-mode: ;
-    @media screen and (max-width: 900px) {
-      left: 85%;
-    }
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    background: yellowgreen;
+
     @media screen and (max-width: 550px) {
-        left: 50%;
-        transform: translate(-50%);
+      transform: scale(1.2) translate(-50%);
     }
-    a{
-        color: whitesmoke;
-    }
-    &:hover{
-        transform: scale(1.2);
-        background: yellowgreen;
-        @media screen and (max-width: 550px) {
-        transform: scale(1.2) translate(-50%)
-        }
-    }
+  }
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: "white on black";
-    src: url(../fonts/whiteonblack/whiteonblack.ttf );
+  font-family: "white on black";
+  src: url(../fonts/whiteonblack/whiteonblack.ttf);
 }
 
 @font-face {
-    font-family: 'baloo';
-    src: url('../fonts/baloo/Baloo2-VariableFont_wght.ttf');
+  font-family: "baloo";
+  src: url("../fonts/baloo/Baloo2-VariableFont_wght.ttf");
 }
 
 $fontTitle: "white on black";

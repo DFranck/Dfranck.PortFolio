@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  cursor: none;
 }
 * body {
   font-family: baloo, sans-serif;
   background: whitesmoke;
+  position: relative;
 }
 * body p {
   line-height: 40px;
@@ -24,6 +26,8 @@
 }
 * body a {
   text-decoration: none;
+  z-index: 20;
+  position: relative;
 }
 * body h2 {
   text-transform: uppercase;
@@ -46,6 +50,27 @@
   }
 }
 
+.mouse {
+  height: 15px;
+  width: 15px;
+  background: yellowgreen;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.mouse-follow {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: pink;
+  position: absolute;
+  transition: 0.2s ease-out;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 #go-top {
   content: "";
   position: fixed;
@@ -59,7 +84,8 @@
   top: 86%;
   left: 91%;
   transition: 0.5s;
-  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
 }
 @media screen and (max-width: 900px) {
   #go-top {
@@ -103,6 +129,7 @@ nav {
   grid-template-columns: 80% 20%;
   align-items: center;
   padding: 15px 30px;
+  z-index: 20;
 }
 nav .in-link {
   display: flex;
@@ -331,6 +358,8 @@ footer .footer-container ul li a {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  z-index: 20;
+  position: relative;
 }
 .projets #projet-container .projet {
   background: rgba(245, 245, 245, 0.05);
