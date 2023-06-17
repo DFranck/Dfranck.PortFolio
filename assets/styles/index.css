@@ -66,12 +66,27 @@
     left: 85%;
   }
 }
+@media screen and (max-width: 550px) {
+  #go-top {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 #go-top a {
   color: whitesmoke;
 }
 #go-top:hover {
   transform: scale(1.2);
   background: yellowgreen;
+}
+@media screen and (max-width: 550px) {
+  #go-top:hover {
+    transform: scale(1.2) translate(-50%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -164,7 +179,7 @@ header h1 {
 }
 @media screen and (max-width: 550px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 header h1 span:nth-child(1),
@@ -180,7 +195,7 @@ header h1 span:nth-child(8) {
 @media screen and (max-width: 550px) {
   header h1 span:nth-child(1),
   header h1 span:nth-child(8) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 header h1 span:nth-child(7) {

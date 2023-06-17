@@ -6,6 +6,7 @@
     body{
         font-family: baloo, sans-serif;
         background: whitesmoke;
+        
         p{
             line-height: 40px;
             font-size: 1.1rem;
@@ -54,8 +55,13 @@
     left: 91%;
     transition: .5s;
     visibility: hidden;
+    // mix-blend-mode: ;
     @media screen and (max-width: 900px) {
       left: 85%;
+    }
+    @media screen and (max-width: 550px) {
+        left: 50%;
+        transform: translate(-50%);
     }
     a{
         color: whitesmoke;
@@ -63,7 +69,14 @@
     &:hover{
         transform: scale(1.2);
         background: yellowgreen;
+        @media screen and (max-width: 550px) {
+        transform: scale(1.2) translate(-50%)
+        }
     }
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 @font-face {
