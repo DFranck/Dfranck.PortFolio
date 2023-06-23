@@ -7,7 +7,7 @@
     font-family: baloo, sans-serif;
     background: whitesmoke;
     position: relative;
-    cursor: red;
+    cursor: none;
     p {
       line-height: 40px;
       font-size: 1.1rem;
@@ -63,7 +63,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background: pink;
+  background: rgba(153, 205, 50, 0.20);
   //   mix-blend-mode: multiply;
   position: absolute;
   transition: 0.2s ease-out;

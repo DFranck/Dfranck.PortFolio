@@ -8,7 +8,7 @@
   font-family: baloo, sans-serif;
   background: whitesmoke;
   position: relative;
-  cursor: red;
+  cursor: none;
 }
 * body p {
   line-height: 40px;
@@ -64,7 +64,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background: pink;
+  background: rgba(153, 205, 50, 0.2);
   position: absolute;
   transition: 0.2s ease-out;
   transform: translate(-50%, -50%);
@@ -154,7 +154,6 @@ nav ul {
 }
 nav ul li {
   font-size: 1.2rem;
-  cursor: pointer;
   transition: 0.2s;
   font-weight: bold;
 }
