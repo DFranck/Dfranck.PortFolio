@@ -3,12 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
-  cursor: none;
 }
 * body {
   font-family: baloo, sans-serif;
   background: whitesmoke;
   position: relative;
+  cursor: red;
 }
 * body p {
   line-height: 40px;
@@ -190,6 +190,8 @@ header {
   color: rgb(45, 45, 45);
 }
 header h1 {
+  z-index: 20;
+  position: relative;
   font-family: "white on black";
   width: -moz-fit-content;
   width: fit-content;

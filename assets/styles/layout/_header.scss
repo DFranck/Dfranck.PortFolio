@@ -4,6 +4,8 @@ header{
   text-align: center;
   color: set.$black1;
   h1{
+    z-index: 20;
+    position: relative;
     font-family: set.$fontTitle;
     width: fit-content;
     padding-top: 100px;
@@ -15,7 +17,7 @@ header{
       font-size: 3rem;
     }
     @media screen and (max-width: 550px) {
-     font-size: 2rem; 
+      font-size: 2rem; 
     }
     span:nth-child(1),
     span:nth-child(8){

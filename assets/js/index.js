@@ -65,6 +65,17 @@ links.forEach((link) => {
 
 const projets = [
   {
+    titre: "Booki",
+    image: "./assets/img/booki.png",
+    description: `Le projet 2 d'OpenClassroom est un projet pratique qui fait partie de la formation de développeur web. Il consiste en l'intégration d'une maquette en un site web en utilisant uniquement HTML et CSS. Voici un résumé de ce projet :
+
+    Objectif : L'objectif principal du projet 2 est d'apprendre et de mettre en pratique les bases de l'intégration web en utilisant HTML et CSS. Les étudiants sont appelés à développer des compétences essentielles en intégration, comme la création de la structure de base d'un site web, le style, la mise en page, et la réactivité.`,
+    technologies: ["HTML", "CSS"],
+    lienGitHub:
+      "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",
+    lienProjet: "",
+  },
+  {
     titre: "Le Resto",
     image: "./assets/img/Le Resto.png",
     description: `Cette réalisation, qui fait partie de ma formation "Mastering-Front-End", met en évidence une maîtrise avancée des technologies CSS et SASS. Elle intègre l'utilisation de mixins et de variables CSS, ce qui renforce la cohérence du design et facilite la maintenance du code. Ce travail a été effectué en SASS, un préprocesseur CSS, démontrant ainsi une approche professionnelle du développement web.`,
