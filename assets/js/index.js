@@ -24,6 +24,7 @@ const professionElement = document.querySelector("#profession");
 const introductionElement = document.querySelector("#introduction");
 const technologiesElement = document.querySelector("#technologies");
 const goTop = document.getElementById("go-top");
+let imgUpscale;
 //===================================
 //MOUSEMOVE
 //===================================
@@ -40,6 +41,8 @@ document.addEventListener("mousemove", (e) => {
   mouseFollow.style.left = e.pageX + "px";
 });
 
+//====================================
+//Création Link Soulignés
 //====================================
 
 nomElement.innerHTML = nomSpans;
@@ -62,7 +65,7 @@ links.forEach((link) => {
 });
 
 //----------------------------SECTION PROJETS-------------------------------------
-// https://dfranck.github.io/Formation-OpenClassroom-Projet3/
+
 const projets = [
   {
     titre: "ohmyfood",
@@ -70,7 +73,7 @@ const projets = [
     description: `ohmyfood, est l'intégration du projet 3 de la formation d'OpenClassroom. Il consiste en l'intégration d'une maquette en un site web en utilisant uniquement HTML et CSS (SASS autorisé). Voici un résumé de ce projet :
 
     Objectif : L'objectif principal du projet 3 est de de coder en "Mobile first"et de versionner le code sur GitHub afin de le rendre accessible sur GitHub Pages.`,
-    technologies: ["HTML", "CSS"],
+    technologies: ["HTML", "CSS", "SASS"],
     lienGitHub: "https://github.com/DFranck/Formation-OpenClassroom-Projet3",
     lienProjet: "https://dfranck.github.io/Formation-OpenClassroom-Projet3/",
   },
@@ -135,7 +138,7 @@ projets.forEach((projet) => {
       }</h5>
       <h5>${
         projet.lienProjet
-          ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank">Version déployée</a>`
+          ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank"><i class="fa-solid fa-globe"></i>Version déployée</a>`
           : ""
       }</h5>
     </div>
