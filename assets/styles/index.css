@@ -5,6 +5,9 @@
   list-style-type: none;
 }
 * body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-family: baloo, sans-serif;
   background: whitesmoke;
   position: relative;
@@ -286,17 +289,6 @@ header .header-bot .description #technologies {
   margin-bottom: 50px;
   color: rgb(45, 45, 45);
 }
-.a-propos .a-propos-content h2::before {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 50%;
-  background: yellowgreen;
-  opacity: 1;
-  width: 50vw;
-  height: 3px;
-  transform: translateX(-50%);
-}
 .a-propos .photo-a-propos {
   background: url(./../img/Photo.png) center/cover;
   border-bottom: 30px solid yellowgreen;
@@ -338,21 +330,18 @@ footer .footer-container ul li a {
 }
 
 .projets {
+  overflow: hidden;
   background: rgb(45, 45, 45);
   color: whitesmoke;
   text-align: center;
   padding: 50px 0;
 }
-.projets h2::before {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 50%;
-  background: yellowgreen;
-  opacity: 1;
-  width: 50vw;
-  height: 3px;
-  transform: translateX(-50%);
+.projets .projets-title {
+  display: flex;
+}
+.projets .projets-title h2 {
+  width: 45%;
+  margin: 0 auto;
 }
 .projets #projet-container {
   width: 95vw;

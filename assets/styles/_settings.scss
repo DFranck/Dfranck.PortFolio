@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  
   body {
-    overflow: hidden;
+    user-select: none;
     font-family: baloo, sans-serif;
     background: whitesmoke;
     position: relative;

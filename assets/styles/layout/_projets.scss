@@ -1,21 +1,16 @@
 @use "../settings" as set;
 
 .projets {
+  overflow: hidden;
   background: set.$black1;
   color: whitesmoke;
   text-align: center;
   padding: 50px 0;
-  h2 {
-    &::before {
-      position: absolute;
-      content: "";
-      top: 100%;
-      left: 50%;
-      background: yellowgreen;
-      opacity: 1;
-      width: 50vw;
-      height: 3px;
-      transform: translateX(-50%);
+  .projets-title{
+    display: flex;
+    h2 {
+      width: 45%;
+      margin: 0 auto;
     }
   }
   #projet-container {

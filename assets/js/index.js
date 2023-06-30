@@ -23,28 +23,12 @@ const nomElement = document.querySelector("#nom");
 const professionElement = document.querySelector("#profession");
 const introductionElement = document.querySelector("#introduction");
 const technologiesElement = document.querySelector("#technologies");
-const goTop = document.getElementById("go-top");
+
 let imgUpscale;
-//===================================
-//MOUSEMOVE
-//===================================
-const mouse = document.createElement("span");
-const mouseFollow = document.createElement("span");
-document.body.appendChild(mouse);
-document.body.appendChild(mouseFollow);
-mouse.classList = "mouse";
-mouseFollow.classList = "mouse-follow";
-document.addEventListener("mousemove", (e) => {
-  mouse.style.top = e.pageY + "px";
-  mouse.style.left = e.pageX + "px";
-  mouseFollow.style.top = e.pageY + "px";
-  mouseFollow.style.left = e.pageX + "px";
-});
 
 //====================================
 //Création Link Soulignés
 //====================================
-
 nomElement.innerHTML = nomSpans;
 professionElement.textContent = profession;
 introductionElement.textContent = introduction;
@@ -54,15 +38,6 @@ for (let technology of technologies) {
   li.textContent = technology;
   technologiesElement.append(li);
 }
-
-// span qui se déplace sous la bar de nav
-
-links.forEach((link) => {
-  link.addEventListener("mouseover", function () {
-    underline.style.width = this.offsetWidth + "px";
-    underline.style.left = this.offsetLeft + "px";
-  });
-});
 
 //----------------------------SECTION PROJETS-------------------------------------
 
@@ -144,15 +119,4 @@ projets.forEach((projet) => {
     </div>
   `;
   sectionProjets.innerHTML += html;
-});
-
-window.addEventListener("scroll", () => {
-  const scrollPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollPosition > scrollValue) {
-    goTop.style.opacity = 1;
-  } else {
-    goTop.style.opacity = 0;
-  }
 });

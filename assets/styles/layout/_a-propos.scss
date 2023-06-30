@@ -11,17 +11,6 @@
             text-transform: uppercase;
             margin-bottom: 50px;
             color: set.$black1;
-            &::before{
-                position: absolute;
-                content: "";
-                top: 100%;
-                left: 50%;
-                background: yellowgreen;
-                opacity: 1;
-                width: 50vw;
-                height: 3px;
-                transform: translateX(-50%);
-              }
         }
     }
     .photo-a-propos{
