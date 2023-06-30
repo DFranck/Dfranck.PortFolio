@@ -5,18 +5,35 @@
   background: set.$black1;
   color: whitesmoke;
   text-align: center;
-  padding: 50px 0;
-  .projets-title{
-    display: flex;
-    h2 {
-      width: 45%;
-      margin: 0 auto;
+  .projets-titles{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .projets-professionnels{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(245, 245, 245, 0.05);
+      border-bottom: 5px solid yellowgreen;
+      h2{
+        margin: 0;
+        padding: 60px 0;
+      }
     }
-    .projets-pro{
-color: red;
-    }
-    .projets-formation{
-color: green;
+    .projets-formations{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(245, 245, 245, 0.00);
+      border-bottom: 5px solid transparent;
+      &:hover{
+        background: rgba(245, 245, 245, 0.05);
+        border-bottom: 5px solid yellowgreen;
+        
+      }
+      h2{
+        margin: 0;
+        padding: 60px 0;
+      }
     }
   }
   #projet-container {

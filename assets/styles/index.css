@@ -11,7 +11,6 @@
   font-family: baloo, sans-serif;
   background: whitesmoke;
   position: relative;
-  cursor: none;
 }
 * body p {
   line-height: 40px;
@@ -334,20 +333,36 @@ footer .footer-container ul li a {
   background: rgb(45, 45, 45);
   color: whitesmoke;
   text-align: center;
-  padding: 50px 0;
 }
-.projets .projets-title {
+.projets .projets-titles {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.projets .projets-titles .projets-professionnels {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 245, 0.05);
+  border-bottom: 5px solid yellowgreen;
 }
-.projets .projets-title h2 {
-  width: 45%;
-  margin: 0 auto;
+.projets .projets-titles .projets-professionnels h2 {
+  margin: 0;
+  padding: 60px 0;
 }
-.projets .projets-title .projets-pro {
-  color: red;
+.projets .projets-titles .projets-formations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 245, 0);
+  border-bottom: 5px solid transparent;
 }
-.projets .projets-title .projets-formation {
-  color: green;
+.projets .projets-titles .projets-formations:hover {
+  background: rgba(245, 245, 245, 0.05);
+  border-bottom: 5px solid yellowgreen;
+}
+.projets .projets-titles .projets-formations h2 {
+  margin: 0;
+  padding: 60px 0;
 }
 .projets #projet-container {
   width: 95vw;
