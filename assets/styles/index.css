@@ -343,6 +343,12 @@ footer .footer-container ul li a {
   width: 45%;
   margin: 0 auto;
 }
+.projets .projets-title .projets-pro {
+  color: red;
+}
+.projets .projets-title .projets-formation {
+  color: green;
+}
 .projets #projet-container {
   width: 95vw;
   margin: 0 auto;
