@@ -275,6 +275,14 @@ header .header-bot .description #technologies {
   flex-wrap: wrap;
   color: yellowgreen;
 }
+header .header-bot .description #competences {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: rgb(214, 63, 171);
+}
 
 .a-propos {
   width: 70%;
@@ -339,6 +347,7 @@ footer .footer-container ul li a {
   grid-template-columns: 50% 50%;
 }
 .projets .projets-titles .projets-professionnels {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,6 +359,7 @@ footer .footer-container ul li a {
   padding: 60px 0;
 }
 .projets .projets-titles .projets-formations {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;

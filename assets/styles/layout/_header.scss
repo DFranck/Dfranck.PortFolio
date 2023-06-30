@@ -83,6 +83,15 @@ header{
         flex-wrap: wrap;
         color: yellowgreen;
       }
+      #competences{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        color: rgb(214, 63, 171);
+
+      }
     }
   }
 }

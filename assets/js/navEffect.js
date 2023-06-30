@@ -1,5 +1,10 @@
 // span qui se déplace sous la bar de nav
-
+const underline = document.querySelector("nav .underline");
+const links = document.querySelectorAll("nav .in-link li");
+const scrollValue = 500;
+//======================================
+// Nav link soulignés
+//======================================
 links.forEach((link) => {
   link.addEventListener("mouseover", function () {
     underline.style.width = this.offsetWidth + "px";
