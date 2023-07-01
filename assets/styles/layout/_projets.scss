@@ -5,8 +5,12 @@
   background: set.$black1;
   color: whitesmoke;
   text-align: center;
-  .projets-titles{
-    cursor: pointer;
+  padding: 50px 0;
+  .projets-titles h2{
+    font-family: set.$fontTitle;
+            font-size: 4rem;
+            padding: 0 0 50px 0;
+            letter-spacing: normal;
   }
   #projet-container {
     width: 95vw;
