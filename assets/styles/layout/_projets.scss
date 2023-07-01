@@ -8,8 +8,8 @@
   .projets-titles{
     display: grid;
     grid-template-columns: 50% 50%;
-    .projets-professionnels{
-      cursor: pointer;
+    cursor: pointer;
+    .projets-formations{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,8 +20,7 @@
         padding: 60px 0;
       }
     }
-    .projets-formations{
-      cursor: pointer;
+    .projets-professionnels{
       display: flex;
       justify-content: center;
       align-items: center;

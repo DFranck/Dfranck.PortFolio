@@ -17,12 +17,12 @@
 const projetFormation = document.querySelector(".projets-formations");
 const projetPro = document.querySelector(".projets-professionnels");
 
-projetFormation.addEventListener("mouseenter", () => {
-  projetPro.style.background = "rgba(245, 245, 245, 0.0)";
-  projetPro.style.borderBottom = "5px solid transparent";
+projetPro.addEventListener("mouseenter", () => {
+  projetFormation.style.background = "rgba(245, 245, 245, 0.0)";
+  projetFormation.style.borderBottom = "5px solid transparent";
 });
 
-projetFormation.addEventListener("mouseleave", () => {
-  projetPro.style.background = "rgba(245, 245, 245, 0.05)";
-  projetPro.style.borderBottom = "5px solid yellowgreen";
+projetPro.addEventListener("mouseleave", () => {
+  projetFormation.style.background = "rgba(245, 245, 245, 0.05)";
+  projetFormation.style.borderBottom = "5px solid yellowgreen";
 });

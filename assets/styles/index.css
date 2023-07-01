@@ -345,32 +345,31 @@ footer .footer-container ul li a {
 .projets .projets-titles {
   display: grid;
   grid-template-columns: 50% 50%;
-}
-.projets .projets-titles .projets-professionnels {
   cursor: pointer;
+}
+.projets .projets-titles .projets-formations {
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(245, 245, 245, 0.05);
   border-bottom: 5px solid yellowgreen;
 }
-.projets .projets-titles .projets-professionnels h2 {
+.projets .projets-titles .projets-formations h2 {
   margin: 0;
   padding: 60px 0;
 }
-.projets .projets-titles .projets-formations {
-  cursor: pointer;
+.projets .projets-titles .projets-professionnels {
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(245, 245, 245, 0);
   border-bottom: 5px solid transparent;
 }
-.projets .projets-titles .projets-formations:hover {
+.projets .projets-titles .projets-professionnels:hover {
   background: rgba(245, 245, 245, 0.05);
   border-bottom: 5px solid yellowgreen;
 }
-.projets .projets-titles .projets-formations h2 {
+.projets .projets-titles .projets-professionnels h2 {
   margin: 0;
   padding: 60px 0;
 }
