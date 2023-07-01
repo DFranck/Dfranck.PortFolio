@@ -6,7 +6,6 @@
     color: whitesmoke;
     width: 450px;
     height: 450px;
-    margin: 0 auto;
     transition: 1s;
     border-radius: 20px;
     cursor: pointer;
@@ -47,7 +46,7 @@
         height: 100%;
       }
     }
-    .projet-description{
+    .description-container{
       background: rgba(5, 5, 5, 0.5);
       width: fit-content;
       margin: 0 auto;

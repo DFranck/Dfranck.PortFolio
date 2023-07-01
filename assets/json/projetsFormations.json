@@ -3,7 +3,8 @@
         "titre": "ohmyfood",
         "image": "./assets/img/ohmyfood.jpg",
         "formation":"OpenClassromm",
-      "description": "",
+      "descriptionBefore": "Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants, car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+      "descriptionAfter": "",
       "technologies": ["HTML", "CSS", "SASS"],
       "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet3",
       "lienProjet": "https://dfranck.github.io/Formation-OpenClassroom-Projet3/"
@@ -11,7 +12,7 @@
     {
         "titre": "Booki",
         "image": "./assets/img/Booki.jpg",
-        "description": "",
+        "description": "L'entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
         "technologies": ["HTML", "CSS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",

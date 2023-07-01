@@ -7,12 +7,14 @@ fetch("assets/json/projetsFormations.json")
     projetsFormations.push(...data);
     projetsFormations.forEach((projet) => {
       const html = `
-        <div class="projet">
-          <h3 class="projet-titre">${projet.titre}</h3>
-          <div class=img-container>
-          <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
-          </div>
-          <div class="projet-description">
+      <p class="projet-description before">${projet.descriptionBefore}</p>
+      <div class="projet">
+      <h3 class="projet-titre">${projet.titre}</h3>
+      <div class=img-container>
+      <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
+      </div>
+          <div class="description-container">
+          
           <h4>Technologies utilisées:</h4>
           <ul class="projet-technologies"> 
           ${projet.technologies.map((tech) => `<li>${tech}</li>`).join("")}
@@ -28,7 +30,8 @@ fetch("assets/json/projetsFormations.json")
               : ""
           }</h5>
           </div>
-        </div>
+          </div>
+          <p class="projet-description after">${projet.descriptionAfter}</p>
       `;
       sectionProjets.innerHTML += html;
     });
