@@ -12,7 +12,8 @@
     {
         "titre": "Booki",
         "image": "./assets/img/Booki.jpg",
-        "description": "L'entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "descriptionBefore":"",
+        "descriptionAfter": "L'entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
         "technologies": ["HTML", "CSS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",
@@ -21,7 +22,8 @@
     {
         "titre": "Le Resto",
         "image": "./assets/img/Le Resto.jpg",
-        "description": "",
+        "descriptionBefore": "Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants, car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+      "descriptionAfter": "",
         "technologies": ["HTML", "CSS", "SASS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP2",
@@ -30,7 +32,8 @@
     {
         "titre": "La montagne",
         "image": "./assets/img/La montagne.jpg",
-        "description": "",
+        "descriptionBefore":"",
+        "descriptionAfter": "L'entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
         "technologies": ["HTML", "CSS", "SASS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP1",
@@ -39,7 +42,8 @@
     {
         "titre": "Gaming Campus",
         "image": "./assets/img/Gaming Campus.jpg",
-        "description": "",
+        "descriptionBefore": "Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants, car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+      "descriptionAfter": "",
       "technologies": ["HTML", "CSS"],
       "lienGitHub":
       "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus",

@@ -13,17 +13,26 @@
             letter-spacing: normal;
   }
   #projet-container {
-    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 50px;
+    z-index: 20;
     align-items: center;
     justify-items: center;
-    z-index: 20;
+    display: grid;
+    grid-template-columns: 50% 50%;
     position: relative;
+    .full-projet{
+      
+    }
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
     .projet-description{
-      width: 450px;
+      width: 40vw;
+      max-width: 450px;
+      @media screen and (max-width: 900px) {
+display: none;
+      }
     }
   }
 }

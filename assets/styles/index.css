@@ -191,25 +191,23 @@ nav ul .underline {
 
 .projet {
   position: relative;
-  background: rgba(245, 245, 245, 0.05);
   color: whitesmoke;
-  width: 450px;
-  height: 450px;
+  width: 40vw;
+  max-width: 450px;
+  min-width: 350px;
+  height: 40vw;
+  max-height: 450px;
+  min-height: 350px;
   transition: 1s;
   border-radius: 20px;
   cursor: pointer;
 }
-@media screen and (max-width: 900px) {
-  .projet {
-    width: 400px;
-    height: 400px;
-  }
-}
 @media screen and (max-width: 550px) {
   .projet {
-    width: 300px;
-    height: 300px;
-    margin-top: 0;
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .projet:hover {
@@ -451,16 +449,26 @@ footer .footer-container ul li a {
   letter-spacing: normal;
 }
 .projets #projet-container {
-  width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 50px;
+  z-index: 20;
   align-items: center;
   justify-items: center;
-  z-index: 20;
+  display: grid;
+  grid-template-columns: 50% 50%;
   position: relative;
 }
+@media screen and (max-width: 900px) {
+  .projets #projet-container {
+    grid-template-columns: 1fr;
+  }
+}
 .projets #projet-container .projet-description {
-  width: 450px;
+  width: 40vw;
+  max-width: 450px;
+}
+@media screen and (max-width: 900px) {
+  .projets #projet-container .projet-description {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
