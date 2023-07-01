@@ -1,16 +1,17 @@
 [
     {
         "titre": "ohmyfood",
-        "image": "./assets/img/ohmyfood.png",
-      "description": "`ohmyfood, est l'intégration du projet 3 de la formation d'OpenClassroom. Il consiste en l'intégration d'une maquette en un site web en utilisant uniquement HTML et CSS (SASS autorisé). L'objectif principal du projet 3 est de de coder en 'Mobile first' et de versionner le code sur GitHub afin de le rendre accessible sur GitHub Pages.`",
+        "image": "./assets/img/ohmyfood.jpg",
+        "formation":"OpenClassromm",
+      "description": "",
       "technologies": ["HTML", "CSS", "SASS"],
       "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet3",
       "lienProjet": "https://dfranck.github.io/Formation-OpenClassroom-Projet3/"
     },
     {
         "titre": "Booki",
-        "image": "./assets/img/Booki.png",
-        "description": "`Le projet 2 d'OpenClassroom est un projet pratique qui fait partie de la formation de développeur web. Il consiste en l'intégration d'une maquette en un site web en utilisant uniquement HTML et CSS. L'objectif principal du projet 2 est d'apprendre et de mettre en pratique les bases de l'intégration web en utilisant HTML et CSS. Les étudiants sont appelés à développer des compétences essentielles en intégration, comme la création de la structure de base d'un site web, le style, la mise en page, et la réactivité.`",
+        "image": "./assets/img/Booki.jpg",
+        "description": "",
         "technologies": ["HTML", "CSS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",
@@ -18,8 +19,8 @@
     },
     {
         "titre": "Le Resto",
-        "image": "./assets/img/Le Resto.png",
-        "description": "`Cette réalisation, qui fait partie de ma formation 'Mastering-Front-End', met en évidence une maîtrise avancée des technologies CSS et SASS. Elle intègre l'utilisation de mixins et de variables CSS, ce qui renforce la cohérence du design et facilite la maintenance du code. Ce travail a été effectué en SASS, un préprocesseur CSS, démontrant ainsi une approche professionnelle du développement web.`",
+        "image": "./assets/img/Le Resto.jpg",
+        "description": "",
         "technologies": ["HTML", "CSS", "SASS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP2",
@@ -27,8 +28,8 @@
     },
     {
         "titre": "La montagne",
-        "image": "./assets/img/La montagne.png",
-        "description": "`Cette intégration de ma formation 'Mastering-Front-End' présente une utilisation avancée des technologies CSS et SASS. Il intègre les mixins et les variables CSS, contribuant à la cohérence du design et à la facilité de maintenance du code. ce dernier a été réalisé en SASS, un préprocesseur CSS, attestant d'une approche professionnelle du développement web.`",
+        "image": "./assets/img/La montagne.jpg",
+        "description": "",
         "technologies": ["HTML", "CSS", "SASS"],
         "lienGitHub":
         "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP1",
@@ -36,8 +37,8 @@
     },
     {
         "titre": "Gaming Campus",
-        "image": "./assets/img/Gaming Campus.png",
-        "description": "`J'ai eu le plaisir lors de ma formation 'Mastering-Front-End' de travailler sur le projet d'intégration du le Gaming Campus, une école dédiée aux jeux vidéo et à l'esport. J'ai utilisé HTML et CSS pour réaliser l'intégration de cette interface. J'ai également mis en œuvre les techniques de Responsive Design pour assurer une excellente expérience utilisateur sur tous les types d'appareils, qu'il s'agisse d'ordinateurs de bureau, de tablettes ou de smartphones.`",
+        "image": "./assets/img/Gaming Campus.jpg",
+        "description": "",
       "technologies": ["HTML", "CSS"],
       "lienGitHub":
       "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus",

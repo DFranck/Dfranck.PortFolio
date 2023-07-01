@@ -1,0 +1,79 @@
+@use "../settings" as set;
+
+.projet {
+    position: relative;
+    background: rgba(245, 245, 245, 0.05);
+    color: whitesmoke;
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+    transition: 1s;
+    border-radius: 20px;
+    cursor: pointer;
+    @media screen and (max-width: 900px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 550px) {
+      width: 90%;
+      margin-top: 0;
+    }
+    &:hover {
+      box-shadow: 0px 0px 20px 20px whitesmoke;
+    }
+    h3 {
+      font-family: set.$fontTitle;
+      font-size: 2rem;
+      margin: 50px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .img-container {
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+      img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .projet-description{
+      background: rgba(5, 5, 5, 0.5);
+      width: fit-content;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    p {
+      margin: 20px auto;
+      width: 80%;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+    ul {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      li {
+        color: yellowgreen;
+      }
+    }
+    h5 {
+      a {
+        color: whitesmoke;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }

@@ -12,7 +12,7 @@ fetch("assets/json/projetsFormations.json")
           <div class=img-container>
           <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
           </div>
-          <p class="projet-description">${projet.description}</p>
+          <div class="projet-description">
           <h4>Technologies utilisées:</h4>
           <ul class="projet-technologies"> 
           ${projet.technologies.map((tech) => `<li>${tech}</li>`).join("")}
@@ -27,6 +27,7 @@ fetch("assets/json/projetsFormations.json")
               ? `<a href="${projet.lienProjet}" class="projet-lien" target="_blank"><i class="fa-solid fa-globe"></i>Version déployée</a>`
               : ""
           }</h5>
+          </div>
         </div>
       `;
       sectionProjets.innerHTML += html;
