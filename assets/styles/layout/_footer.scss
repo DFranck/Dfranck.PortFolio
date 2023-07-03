@@ -2,9 +2,10 @@
 
 footer{
     text-align: center;
+    background: rgb(45,45,45);
     .footer-container{
-        width: 70%;
-        margin: 50px auto;
+        padding: 50px 200px;
+        color: whitesmoke;
         h2{
             margin-bottom: 30px;
         }
@@ -16,7 +17,7 @@ footer{
             li{
                 a{
                     font-size: 2rem;
-                    color: black;
+                    color: whitesmoke;
                 }
             }
         }

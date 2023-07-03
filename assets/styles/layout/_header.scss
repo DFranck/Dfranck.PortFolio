@@ -3,6 +3,7 @@
 header{
   text-align: center;
   color: set.$black1;
+  height: 90vh;
   h1{
     z-index: 20;
     position: relative;
@@ -44,6 +45,24 @@ header{
     }
     
   }
+  h2 {
+    text-transform: uppercase;
+    position: relative;
+    font-family: set.$fontSubtitle;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-top: 80px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      margin-top: 30px;
+    }
+  }
   @keyframes shakeLetter {
     10%, 90% {
       transform: scale(1.5) translate3d(-1px, 0, 0) rotate3d(0, 0, 1, -3deg);
@@ -64,11 +83,12 @@ header{
   
   
   .header-bot{
-    background: rgb(45, 45, 45);
+    // background: rgb(45, 45, 45);
     margin-top: 50px;
     padding: 50px 0;
     .description{
-      color: whitesmoke;
+      // color: whitesmoke;
+      color: rgb(45, 45, 45);
       width: 80%;
       margin:  auto;
       #introduction{
