@@ -7,8 +7,6 @@ fetch("assets/json/projetsFormations.json")
     projetsFormations.push(...data);
     projetsFormations.forEach((projet) => {
       const html = `
-      <div class="full-projet">
-      <p class="projet-description before">${projet.descriptionBefore}</p>
       <div class="projet">
       <h3 class="projet-titre">${projet.titre}</h3>
       <div class=img-container>
@@ -31,8 +29,6 @@ fetch("assets/json/projetsFormations.json")
               : ""
           }</h5>
           </div>
-          </div>
-          <p class="projet-description after">${projet.descriptionAfter}</p>
           </div>
       `;
       sectionProjets.innerHTML += html;

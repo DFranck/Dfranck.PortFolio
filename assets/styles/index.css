@@ -191,6 +191,7 @@ nav ul .underline {
 
 .projet {
   position: relative;
+  padding: 30px;
   color: whitesmoke;
   width: 40vw;
   max-width: 450px;
@@ -219,6 +220,11 @@ nav ul .underline {
   margin: 50px;
   text-transform: uppercase;
   letter-spacing: normal;
+}
+@media screen and (max-width: 900px) {
+  .projet h3 {
+    margin: 0 0 50px 0;
+  }
 }
 .projet .img-container {
   border-radius: 20px;
@@ -456,6 +462,7 @@ footer .footer-container ul li a {
   justify-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 50px;
   position: relative;
 }
 @media screen and (max-width: 900px) {

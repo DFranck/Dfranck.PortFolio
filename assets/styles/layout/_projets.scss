@@ -11,6 +11,7 @@
             font-size: 4rem;
             padding: 0 0 50px 0;
             letter-spacing: normal;
+            
   }
   #projet-container {
     max-width: 1000px;
@@ -20,10 +21,8 @@
     justify-items: center;
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 50px;
     position: relative;
-    .full-projet{
-      
-    }
     @media screen and (max-width: 900px) {
       grid-template-columns: 1fr;
     }
