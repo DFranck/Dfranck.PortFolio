@@ -183,7 +183,6 @@ nav ul .underline {
   min-height: 350px;
   transition: 1s;
   border-radius: 20px;
-  cursor: pointer;
 }
 @media screen and (max-width: 550px) {
   .projet {
@@ -214,7 +213,6 @@ nav ul .underline {
   margin: 0 auto 20px;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -100;
@@ -458,27 +456,22 @@ footer .footer-container ul li a {
   letter-spacing: normal;
 }
 .projets #projet-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  z-index: 20;
-  align-items: center;
-  justify-items: center;
   display: grid;
-  grid-template-columns: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   position: relative;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1440px) {
   .projets #projet-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-.projets #projet-container .projet-description {
-  width: 40vw;
-  max-width: 450px;
-}
-@media screen and (max-width: 900px) {
-  .projets #projet-container .projet-description {
-    display: none;
+@media screen and (max-width: 768px) {
+  .projets #projet-container {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=index.css.map */

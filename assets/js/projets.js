@@ -1,3 +1,7 @@
+//===========================================================
+// Projets
+//===========================================================
+
 const sectionProjets = document.getElementById("projet-container");
 const projetsFormations = [];
 
@@ -34,3 +38,5 @@ fetch("assets/json/projetsFormations.json")
       sectionProjets.innerHTML += html;
     });
   });
+
+//*********************Cards */
