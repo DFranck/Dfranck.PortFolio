@@ -75,12 +75,18 @@
       backdrop-filter: blur(2px);
       opacity: 0;
       display: none;
+      @media screen and (max-width: 550px) {
+        padding: 5px;
+      }
     }
     p {
       margin: 20px;
       text-align: justify;
       position: relative;
       z-index: 10;
+      @media screen and (max-width: 1000px) {
+        line-height: 1.5rem;
+      }
     }
     h4 {
       position: relative;
@@ -103,9 +109,6 @@
       }
     }
     h5 {
-      @media screen and (max-width: 550px) {
-        display: none;
-      }
       a {
         color: whitesmoke;
         i {

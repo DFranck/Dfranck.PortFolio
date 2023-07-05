@@ -21,5 +21,14 @@ footer{
                 }
             }
         }
+        @media screen and (max-width: 1440px) {
+            padding: 50px 100px;
+          }
+        @media screen and (max-width: 550px) {
+            padding: 50px 0 150px;
+            p{
+                display: none;
+            }
+          }
     }
 }

@@ -233,11 +233,21 @@ nav ul .underline {
   opacity: 0;
   display: none;
 }
+@media screen and (max-width: 550px) {
+  .card .description {
+    padding: 5px;
+  }
+}
 .card p {
   margin: 20px;
   text-align: justify;
   position: relative;
   z-index: 10;
+}
+@media screen and (max-width: 1000px) {
+  .card p {
+    line-height: 1.5rem;
+  }
 }
 .card h4 {
   position: relative;
@@ -260,11 +270,6 @@ nav ul .underline {
 }
 .card ul li {
   color: yellowgreen;
-}
-@media screen and (max-width: 550px) {
-  .card h5 {
-    display: none;
-  }
 }
 .card h5 a {
   color: whitesmoke;
@@ -407,24 +412,6 @@ header .header-bot .description #competences {
   font-size: 3rem;
   letter-spacing: normal;
 }
-.a-propos .photo-a-propos {
-  background: url(./../img/Photo.png) center/cover;
-  border-bottom: 30px solid yellowgreen;
-  box-shadow: inset 0px 1px 11px 4px yellowgreen;
-  border-radius: 300px;
-  width: 450px;
-  height: 450px;
-  margin: 50px auto;
-}
-@media screen and (max-width: 900px) {
-  .a-propos .photo-a-propos {
-    width: 250px;
-    height: 250px;
-  }
-}
-.a-propos .photo-a-propos img {
-  border: 2px solid yellowgreen;
-}
 
 footer {
   text-align: center;
@@ -447,6 +434,19 @@ footer .footer-container ul li a {
   font-size: 2rem;
   color: whitesmoke;
 }
+@media screen and (max-width: 1440px) {
+  footer .footer-container {
+    padding: 50px 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer .footer-container {
+    padding: 50px 0 150px;
+  }
+  footer .footer-container p {
+    display: none;
+  }
+}
 
 .projets {
   overflow: hidden;
@@ -462,7 +462,7 @@ footer .footer-container ul li a {
   letter-spacing: normal;
 }
 .projets #projet-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   justify-content: center;
@@ -471,7 +471,7 @@ footer .footer-container ul li a {
   gap: 50px;
   position: relative;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .projets #projet-container {
     grid-template-columns: 1fr 1fr;
   }
