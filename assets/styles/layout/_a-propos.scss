@@ -1,43 +1,30 @@
 @use "../settings" as set;
 
 .a-propos{
-    width: 70%;
-    margin: 0 auto;
-    padding: 50px 0 ;
     text-align: center;
-    .a-propos-content{
-        h2{
-            position: relative;
-            text-transform: uppercase;
-            margin-bottom: 50px;
-            color: set.$black1;
-            &::before{
-                position: absolute;
-                content: "";
-                top: 100%;
-                left: 50%;
-                background: yellowgreen;
-                opacity: 1;
-                width: 50vw;
-                height: 3px;
-                transform: translateX(-50%);
-              }
-        }
+    p{
+        max-width: 1000px;
+        width: 80%;
+        margin: 0 auto;
     }
-    .photo-a-propos{
-        background: url(./../img/Photo.png)center/cover;
-        border-bottom: 30px solid yellowgreen;
-        box-shadow: inset 0px 1px 11px 4px yellowgreen;
-        border-radius: 300px;
-        width: 450px;
-        height: 450px;
-        margin: 50px auto;
-        @media screen and (max-width: 900px) {
-            width: 250px;
-            height: 250px;
+    .description{
+        margin-top: 50px;
+        #technologies{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+          color: set.$accent1;
         }
-        img{
-            border: 2px solid yellowgreen;
+        #competences{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+          color: set.$accent1;
+  
         }
-    }
+      }
 }

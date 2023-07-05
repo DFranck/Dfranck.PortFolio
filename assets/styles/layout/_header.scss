@@ -1,15 +1,18 @@
 @use "../settings" as set;
 
 header{
+  margin-top: 100px;
   text-align: center;
-  color: set.$black1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   h1{
-    z-index: 20;
+    margin-top: 20px;
+    margin-bottom: 50px;
     position: relative;
     font-family: set.$fontTitle;
     width: fit-content;
-    padding-top: 100px;
-    margin: 0 auto 10px;
     display: flex;
     align-items: center;
     font-size: 5rem;
@@ -31,7 +34,10 @@ header{
     }
     span:nth-child(7){
       display: inline-block;
-      width: 2rem;
+      @media screen and (max-width: 550px) {
+      font-size: 3rem;
+      }
+
     }
     span{
       transition: .2s;
@@ -43,6 +49,22 @@ header{
       }
     }
     
+  }
+  h2 {
+    padding: 0;
+    text-transform: uppercase;
+    font-family: set.$fontSubtitle;
+    font-size: 2rem;
+    letter-spacing: 5px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+    }
   }
   @keyframes shakeLetter {
     10%, 90% {
@@ -61,29 +83,14 @@ header{
       transform: scale(1.5) translate3d(4px, 0, 0) rotate3d(0, 0, 1, 3deg);
     }
   }
-  
+  h3{
+    margin-top: 50px;
+  }
   
   .header-bot{
-    background: rgb(45, 45, 45);
-    padding: 50px 0;
-    .description{
-      color: whitesmoke;
+    max-width: 1000px;
       width: 80%;
-      margin:  auto;
-      #introduction{
-        
-        margin-bottom: 20px;
-        
-      }
-      #technologies{
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-        color: yellowgreen;
-      }
-    }
+      margin: 100px auto;
   }
 }
 

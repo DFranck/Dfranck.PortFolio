@@ -1,119 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  body {
-    overflow: hidden;
-    font-family: baloo, sans-serif;
-    background: whitesmoke;
-    position: relative;
-    cursor: none;
-    p {
-      line-height: 40px;
-      font-size: 1.1rem;
-
-      @media screen and (max-width: 900px) {
-        font-size: 1rem;
-      }
-
-      @media screen and (max-width: 550px) {
-        font-size: 0.8rem;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      z-index: 20;
-      position: relative;
-    }
-
-    h2 {
-      text-transform: uppercase;
-      position: relative;
-      font-family: baloo;
-      font-size: 2rem;
-      margin: 50px 0 100px;
-      letter-spacing: 5px;
-
-      @media screen and (max-width: 900px) {
-        font-size: 1.5rem;
-      }
-
-      @media screen and (max-width: 550px) {
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        margin-top: 30px;
-      }
-    }
-  }
-}
-
-.mouse {
-  height: 15px;
-  width: 15px;
-  background: yellowgreen;
-  //   mix-blend-mode: multiply;
-  border-radius: 50px;
-  position: absolute;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-}
-
-.mouse-follow {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background: rgba(153, 205, 50, 0.20);
-  //   mix-blend-mode: multiply;
-  position: absolute;
-  transition: 0.2s ease-out;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-#go-top {
-  content: "";
-  position: fixed;
-  background: rgba(45, 45, 45, 0.2);
-  // background: rgba(245, 245, 245, 0.2);
-  color: whitesmoke;
-  // color: rgb(45, 45, 45);
-  font-size: 3rem;
-  width: 75px;
-  height: 75px;
-  border: none;
-  border-radius: 50px;
-  top: 86%;
-  left: 91%;
-  transition: 0.5s;
-  opacity: 0;
-  z-index: 20;
-
-  // mix-blend-mode: ;
-  @media screen and (max-width: 900px) {
-    left: 85%;
-  }
-
-  @media screen and (max-width: 550px) {
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  a {
-    color: whitesmoke;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-    background: yellowgreen;
-
-    @media screen and (max-width: 550px) {
-      transform: scale(1.2) translate(-50%);
-    }
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -128,6 +12,111 @@ html {
   src: url("../fonts/baloo/Baloo2-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 $fontTitle: "white on black";
-$font: "baloo";
-$black1: rgb(45, 45, 45);
+$fontSubtitle: "baloo";
+$colorTitle: #333333;
+
+$fontTxt: "opensans";
+$colorTxt: #999999;
+
+$background1 : #F5F5F5;
+$background2: rgb(45, 45, 45);;
+$backgroundBlur: rgba(5, 5, 5, 0.5);
+$accent1: rgb(154,205,50);
+$accent2: rgba(215, 46, 167);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  
+  body {
+    user-select: none;
+    font-family: opensans, sans-serif;
+    background: whitesmoke;
+    position: relative;
+    section{
+      margin-bottom: 100px;
+      
+    }
+    h1, h2{
+      color: $colorTitle;
+      font-family: $fontTitle;
+    }
+    h2{
+      font-size: 4rem;
+      padding: 50px 0 100px 0;
+      letter-spacing: normal;
+    }
+    p {
+      text-align: justify;
+      line-height: 40px;
+      font-weight: 400;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+
+    
+  }
+}
+
+
+#go-top {
+  cursor: pointer;
+  content: "";
+  position: fixed;
+  background: $backgroundBlur;
+  opacity: .5px;
+  backdrop-filter: blur(2px);
+  font-size: 3rem;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 10px;
+  top: 86%;
+  left: 91%;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 20;
+
+  
+  // mix-blend-mode: ;
+  @media screen and (max-width: 900px) {
+    left: 85%;
+  }
+
+  @media screen and (max-width: 550px) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  a {
+    color: whitesmoke;
+  }
+  
+  &:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 20px $accent2;
+    a{
+      color: $accent2;
+    }
+  }
+}
+

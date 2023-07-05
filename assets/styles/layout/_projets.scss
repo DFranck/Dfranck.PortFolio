@@ -1,89 +1,25 @@
 @use "../settings" as set;
 
 .projets {
-  background: set.$black1;
+  overflow: hidden;
   color: whitesmoke;
   text-align: center;
   padding: 50px 0;
-  h2 {
-    &::before {
-      position: absolute;
-      content: "";
-      top: 100%;
-      left: 50%;
-      background: yellowgreen;
-      opacity: 1;
-      width: 50vw;
-      height: 3px;
-      transform: translateX(-50%);
-    }
-  }
   #projet-container {
-    width: 95vw;
+    max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 20;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
     position: relative;
-    .projet {
-      background: rgba(245, 245, 245, 0.05);
-      color: whitesmoke;
-      width: 40%;
-      margin: 50px auto;
-      transition: 1s;
-      @media screen and (max-width: 900px) {
-        width: 70%;
-      }
-      @media screen and (max-width: 550px) {
-        width: 90%;
-        margin-top: 0;
-      }
-      &:hover {
-        box-shadow: 0px 0px 20px 20px whitesmoke;
-      }
-      h3 {
-        font-family: set.$fontTitle;
-        font-size: 2rem;
-        margin: 50px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .img-container {
-        overflow: auto;
-        margin: 0 auto 20px;
-        width: 80%;
-        height: 200px;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      p {
-        margin: 20px auto;
-        width: 80%;
-      }
-      h4 {
-        font-size: 1.1rem;
-      }
-      ul {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        li {
-          color: yellowgreen;
-        }
-      }
-      h5 {
-        margin: 30px 0;
-        a {
-          color: whitesmoke;
-          i {
-            margin-right: 10px;
-          }
-        }
-      }
+    @media screen and (max-width: 1500px) {
+      grid-template-columns: 1fr 1fr;
+
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
   }
 }
