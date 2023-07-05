@@ -24,10 +24,11 @@ $colorTitle: #333333;
 $fontTxt: "opensans";
 $colorTxt: #999999;
 
-$background : #F5F5F5;
-
+$background1 : #F5F5F5;
+$background2: rgb(45, 45, 45);;
+$backgroundBlur: rgba(5, 5, 5, 0.5);
 $accent1: rgb(154,205,50);
-$accent2: rgb(214,63,171);
+// $accent2: rgb(215, 46, 167);
 
 * {
   margin: 0;
@@ -40,13 +41,16 @@ $accent2: rgb(214,63,171);
     font-family: opensans, sans-serif;
     background: whitesmoke;
     position: relative;
+    section{
+      margin-bottom: 100px;
+    }
     h1, h2{
       color: $colorTitle;
       font-family: $fontTitle;
     }
     h2{
       font-size: 4rem;
-      padding: 0 0 50px 0;
+      padding: 50px 0 100px 0;
       letter-spacing: normal;
     }
     p {

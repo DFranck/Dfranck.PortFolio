@@ -2,33 +2,34 @@
 
 footer{
     text-align: center;
-    background: rgb(45,45,45);
+    background: set.$background2;
+    padding-bottom: 100px;
     .footer-container{
-        padding: 50px 200px;
         color: whitesmoke;
         h2{
-            margin-bottom: 30px;
+            color: set.$background1;
+        }
+        p{
+            max-width: 1000px;
+            width: 80%;
+            margin: 0 auto;
         }
         ul{
+            padding: 50px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 60px;
             li{
+                transition: .2s;
                 a{
                     font-size: 2rem;
                     color: whitesmoke;
                 }
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
-        @media screen and (max-width: 1440px) {
-            padding: 50px 100px;
-          }
-        @media screen and (max-width: 550px) {
-            padding: 50px 0 150px;
-            p{
-                display: none;
-            }
-          }
     }
 }

@@ -2,7 +2,6 @@
 
 .card {
     position: relative;
-    padding: 30px;
     color: whitesmoke;
     width: 40vw;
     max-width: 450px;
@@ -10,8 +9,8 @@
     height: 40vw;
     max-height: 450px;
     min-height: 350px;
-    transition: .2s;
     border-radius: 20px;
+    transition: .5s;
     @media screen and (max-width: 550px) {
       min-height: 300px;
       min-width: 300px;
@@ -20,16 +19,17 @@
     }
     &:hover {
       padding: 0;
-      box-shadow: 0px 0px 20px 20px whitesmoke;
+      box-shadow: 0px 0px 20px 20px set.$accent1;
       h3{
         display: none;
       }
       .mini-description{
-        opacity: 0;
+        display: none;
       }
       .description{
+        
         opacity: 1;
-        display: block;
+        visibility: visible;
       }
     }
     h3 {
@@ -41,7 +41,7 @@
       text-transform: uppercase;
       letter-spacing: normal;
       @media screen and (max-width: 900px) {
-        margin: 0 0 50px 0;
+        margin: 20px 0 20px 0;
       }
     }
       img{
@@ -58,7 +58,7 @@
     .mini-description{
       position: relative;
       z-index: 10;
-      background: rgba(5, 5, 5, 0.5);
+      background: set.$backgroundBlur;
       margin: 0 auto;
       width: fit-content;
       padding: 20px;
@@ -71,10 +71,11 @@
       height: 100%;
       padding: 20px;
       border-radius: 20px;
-      background: rgba(5, 5, 5, 0.5);
+      background: set.$backgroundBlur;
       backdrop-filter: blur(2px);
       opacity: 0;
-      display: none;
+      visibility: hidden;
+      transition: opacity .5s;
       @media screen and (max-width: 550px) {
         padding: 5px;
       }
@@ -96,7 +97,7 @@
     ul {
       position: relative;
       z-index: 10;
-      margin: 20px 0;
+      margin-top: 20px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -105,12 +106,13 @@
         margin-bottom: 0;
       }
       li {
-        color: yellowgreen;
+        color: set.$accent1;
       }
     }
     h5 {
+      margin-top: 10px;
       a {
-        color: whitesmoke;
+        color: set.$accent1;
         i {
           margin-right: 10px;
         }

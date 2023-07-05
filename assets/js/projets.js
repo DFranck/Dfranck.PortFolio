@@ -1,5 +1,5 @@
 //===========================================================
-// Projets
+// Projets Cards
 //===========================================================
 
 const sectionProjets = document.getElementById("projet-container");
@@ -13,6 +13,14 @@ fetch("assets/json/projetsFormations.json")
       const html = `
       <div class="card">
       <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
+      <h3 class="projet-titre">${projet.titre}</h3>
+      <div class="mini-description">
+      <h4>Technologies utilisées:</h4>
+      <ul class="projet-technologies"> 
+      ${projet.technologies.map((tech) => `<li>${tech}</li>`).join("")}
+      </ul>
+      
+      </div>
       <div class="description">
       <p>${projet.description}</p>
       <h5>${
@@ -26,19 +34,9 @@ fetch("assets/json/projetsFormations.json")
               : ""
           }</h5>
       </div>
-      <h3 class="projet-titre">${projet.titre}</h3>
-      <div class="mini-description">
-      <h4>Technologies utilisées:</h4>
-      <ul class="projet-technologies"> 
-      ${projet.technologies.map((tech) => `<li>${tech}</li>`).join("")}
-      </ul>
-      
-          </div>
-          </div>
+      </div>
 
           `;
       sectionProjets.innerHTML += html;
     });
   });
-
-//*********************Cards */

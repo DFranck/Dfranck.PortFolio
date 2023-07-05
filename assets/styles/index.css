@@ -28,13 +28,16 @@ html {
   background: whitesmoke;
   position: relative;
 }
+* body section {
+  margin-bottom: 100px;
+}
 * body h1, * body h2 {
   color: #333333;
   font-family: "white on black";
 }
 * body h2 {
   font-size: 4rem;
-  padding: 0 0 50px 0;
+  padding: 50px 0 100px 0;
   letter-spacing: normal;
 }
 * body p {
@@ -142,25 +145,23 @@ nav ul li {
   }
 }
 nav ul li:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 nav ul li a {
   transition: 0.2s;
-  color: rgb(154, 205, 50);
+  color: #333333;
 }
-nav ul .underline {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  height: 3px;
-  width: 70px;
-  background: yellowgreen;
-  transition: 0.1s;
+nav ul li a i {
+  font-size: 2rem;
+}
+@media screen and (max-width: 550px) {
+  nav ul li a i {
+    font-size: 1.2rem;
+  }
 }
 
 .card {
   position: relative;
-  padding: 30px;
   color: whitesmoke;
   width: 40vw;
   max-width: 450px;
@@ -168,8 +169,8 @@ nav ul .underline {
   height: 40vw;
   max-height: 450px;
   min-height: 350px;
-  transition: 0.2s;
   border-radius: 20px;
+  transition: 0.5s;
 }
 @media screen and (max-width: 550px) {
   .card {
@@ -181,17 +182,17 @@ nav ul .underline {
 }
 .card:hover {
   padding: 0;
-  box-shadow: 0px 0px 20px 20px whitesmoke;
+  box-shadow: 0px 0px 20px 20px rgb(154, 205, 50);
 }
 .card:hover h3 {
   display: none;
 }
 .card:hover .mini-description {
-  opacity: 0;
+  display: none;
 }
 .card:hover .description {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 .card h3 {
   position: relative;
@@ -204,7 +205,7 @@ nav ul .underline {
 }
 @media screen and (max-width: 900px) {
   .card h3 {
-    margin: 0 0 50px 0;
+    margin: 20px 0 20px 0;
   }
 }
 .card img {
@@ -240,7 +241,8 @@ nav ul .underline {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   opacity: 0;
-  display: none;
+  visibility: hidden;
+  transition: opacity 0.5s;
 }
 @media screen and (max-width: 550px) {
   .card .description {
@@ -266,7 +268,7 @@ nav ul .underline {
 .card ul {
   position: relative;
   z-index: 10;
-  margin: 20px 0;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -278,10 +280,13 @@ nav ul .underline {
   }
 }
 .card ul li {
-  color: yellowgreen;
+  color: rgb(154, 205, 50);
+}
+.card h5 {
+  margin-top: 10px;
 }
 .card h5 a {
-  color: whitesmoke;
+  color: rgb(154, 205, 50);
 }
 .card h5 a i {
   margin-right: 10px;
@@ -394,7 +399,7 @@ header .header-bot .description #technologies {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  color: yellowgreen;
+  color: rgb(154, 205, 50);
 }
 header .header-bot .description #competences {
   margin-top: 30px;
@@ -402,7 +407,7 @@ header .header-bot .description #competences {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  color: rgb(214, 63, 171);
+  color: rgb(154, 205, 50);
 }
 
 .a-propos {
@@ -415,41 +420,39 @@ header .header-bot .description #competences {
 footer {
   text-align: center;
   background: rgb(45, 45, 45);
+  padding-bottom: 100px;
 }
 footer .footer-container {
-  padding: 50px 200px;
   color: whitesmoke;
 }
 footer .footer-container h2 {
-  margin-bottom: 30px;
+  color: #F5F5F5;
+}
+footer .footer-container p {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
 }
 footer .footer-container ul {
+  padding: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
 }
+footer .footer-container ul li {
+  transition: 0.2s;
+}
 footer .footer-container ul li a {
   font-size: 2rem;
   color: whitesmoke;
 }
-@media screen and (max-width: 1440px) {
-  footer .footer-container {
-    padding: 50px 100px;
-  }
-}
-@media screen and (max-width: 550px) {
-  footer .footer-container {
-    padding: 50px 0 150px;
-  }
-  footer .footer-container p {
-    display: none;
-  }
+footer .footer-container ul li:hover {
+  transform: scale(1.2);
 }
 
 .projets {
   overflow: hidden;
-  background: #F5F5F5;
   color: whitesmoke;
   text-align: center;
   padding: 50px 0;

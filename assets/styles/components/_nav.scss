@@ -7,7 +7,7 @@ nav {
   align-items: center;
   padding: 15px 30px;
   z-index: 20;
-height: 10vh;
+  height: 10vh;
   .in-link {
     display: flex;
     justify-content: start;
@@ -37,22 +37,18 @@ height: 10vh;
         font-size: 0.9rem;
       }
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
       a {
         transition: 0.2s;
-        color: set.$accent1;
+        color: set.$colorTitle;
+        i{
+          font-size: 2rem;
+          @media screen and (max-width: 550px) {
+            font-size: 1.2rem;
+          }
+        }
       }
-    }
-
-    .underline {
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      height: 3px;
-      width: 70px;
-      background: yellowgreen;
-      transition: 0.1s;
     }
   }
 }
