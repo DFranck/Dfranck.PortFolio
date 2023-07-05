@@ -60,15 +60,18 @@ html {
 }
 
 #go-top {
+  cursor: pointer;
   content: "";
   position: fixed;
-  background: rgba(45, 45, 45, 0.2);
-  color: whitesmoke;
+  background: rgba(5, 5, 5, 0.5);
+  opacity: 0.5px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   font-size: 3rem;
   width: 75px;
   height: 75px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   top: 86%;
   left: 91%;
   transition: 0.5s;
@@ -90,13 +93,11 @@ html {
   color: whitesmoke;
 }
 #go-top:hover {
-  transform: scale(1.2);
-  background: yellowgreen;
+  background: transparent;
+  box-shadow: 0 0 20px 20px rgb(215, 46, 167);
 }
-@media screen and (max-width: 550px) {
-  #go-top:hover {
-    transform: scale(1.2) translate(-50%);
-  }
+#go-top:hover a {
+  color: rgb(215, 46, 167);
 }
 
 nav {
@@ -295,15 +296,18 @@ nav ul li a i {
 header {
   text-align: center;
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 header h1 {
-  z-index: 20;
+  margin-top: 20px;
+  margin-bottom: 50px;
   position: relative;
   font-family: "white on black";
   width: -moz-fit-content;
   width: fit-content;
-  padding-top: 100px;
-  margin: 0 auto 10px;
   display: flex;
   align-items: center;
   font-size: 5rem;
@@ -336,7 +340,11 @@ header h1 span:nth-child(8) {
 }
 header h1 span:nth-child(7) {
   display: inline-block;
-  width: 2rem;
+}
+@media screen and (max-width: 550px) {
+  header h1 span:nth-child(7) {
+    font-size: 3rem;
+  }
 }
 header h1 span {
   transition: 0.2s;
@@ -348,12 +356,11 @@ header h1 span:hover {
   animation: shakeLetter 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 header h2 {
+  padding: 0;
   text-transform: uppercase;
-  position: relative;
   font-family: "baloo";
   font-size: 2rem;
   letter-spacing: 5px;
-  margin-top: 80px;
 }
 @media screen and (max-width: 900px) {
   header h2 {
@@ -381,17 +388,8 @@ header h2 {
     transform: scale(1.5) translate3d(4px, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
 }
-header .header-bot {
+header h3 {
   margin-top: 50px;
-  padding: 50px 0;
-}
-header .header-bot .description {
-  color: rgb(45, 45, 45);
-  width: 80%;
-  margin: auto;
-}
-header .header-bot .description #introduction {
-  margin-bottom: 20px;
 }
 header .header-bot .description #technologies {
   margin-top: 30px;
@@ -411,10 +409,31 @@ header .header-bot .description #competences {
 }
 
 .a-propos {
-  width: 70%;
-  margin: 0 auto;
-  padding: 50px 0;
   text-align: center;
+}
+.a-propos p {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+.a-propos .description {
+  margin-top: 50px;
+}
+.a-propos .description #technologies {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: rgb(154, 205, 50);
+}
+.a-propos .description #competences {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: rgb(154, 205, 50);
 }
 
 footer {

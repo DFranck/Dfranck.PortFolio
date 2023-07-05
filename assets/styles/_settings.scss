@@ -28,7 +28,7 @@ $background1 : #F5F5F5;
 $background2: rgb(45, 45, 45);;
 $backgroundBlur: rgba(5, 5, 5, 0.5);
 $accent1: rgb(154,205,50);
-// $accent2: rgb(215, 46, 167);
+$accent2: rgba(215, 46, 167);
 
 * {
   margin: 0;
@@ -43,6 +43,7 @@ $accent1: rgb(154,205,50);
     position: relative;
     section{
       margin-bottom: 100px;
+      
     }
     h1, h2{
       color: $colorTitle;
@@ -77,23 +78,24 @@ $accent1: rgb(154,205,50);
 
 
 #go-top {
+  cursor: pointer;
   content: "";
   position: fixed;
-  background: rgba(45, 45, 45, 0.2);
-  // background: rgba(245, 245, 245, 0.2);
-  color: whitesmoke;
-  // color: rgb(45, 45, 45);
+  background: $backgroundBlur;
+  opacity: .5px;
+  backdrop-filter: blur(2px);
   font-size: 3rem;
   width: 75px;
   height: 75px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   top: 86%;
   left: 91%;
   transition: 0.5s;
   opacity: 0;
   z-index: 20;
 
+  
   // mix-blend-mode: ;
   @media screen and (max-width: 900px) {
     left: 85%;
@@ -107,13 +109,12 @@ $accent1: rgb(154,205,50);
   a {
     color: whitesmoke;
   }
-
+  
   &:hover {
-    transform: scale(1.2);
-    background: yellowgreen;
-
-    @media screen and (max-width: 550px) {
-      transform: scale(1.2) translate(-50%);
+    background: transparent;
+    box-shadow: 0 0 20px 20px $accent2;
+    a{
+      color: $accent2;
     }
   }
 }
