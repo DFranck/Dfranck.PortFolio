@@ -1,8 +1,8 @@
 @use "../settings" as set;
 
 header{
+  margin-top: 100px;
   text-align: center;
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,6 @@ header{
     @media screen and (max-width: 550px) {
       font-size: 0.9rem;
       letter-spacing: 2px;
-      margin-top: 30px;
     }
   }
   @keyframes shakeLetter {
@@ -89,25 +88,9 @@ header{
   }
   
   .header-bot{
-    .description{
-      #technologies{
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-        color: set.$accent1;
-      }
-      #competences{
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-        color: set.$accent1;
-
-      }
-    }
+    max-width: 1000px;
+      width: 80%;
+      margin: 100px auto;
   }
 }
 
