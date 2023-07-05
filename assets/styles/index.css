@@ -11,8 +11,8 @@ html {
   src: url("../fonts/baloo/Baloo2-VariableFont_wght.ttf");
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Black.ttf");
+  font-family: "opensans";
+  src: url("../fonts/opensans/OpenSans-VariableFont_wdth,wght.ttf");
 }
 * {
   margin: 0;
@@ -24,13 +24,22 @@ html {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  font-family: baloo, sans-serif;
+  font-family: opensans, sans-serif;
   background: whitesmoke;
   position: relative;
 }
+* body h1, * body h2 {
+  color: #333333;
+  font-family: "white on black";
+}
+* body h2 {
+  font-size: 4rem;
+  padding: 0 0 50px 0;
+  letter-spacing: normal;
+}
 * body p {
   line-height: 40px;
-  font-size: 1.1rem;
+  font-weight: 400;
 }
 @media screen and (max-width: 900px) {
   * body p {
@@ -137,7 +146,7 @@ nav ul li:hover {
 }
 nav ul li a {
   transition: 0.2s;
-  color: rgb(45, 45, 45);
+  color: rgb(154, 205, 50);
 }
 nav ul .underline {
   position: absolute;
@@ -280,7 +289,6 @@ nav ul .underline {
 
 header {
   text-align: center;
-  color: rgb(45, 45, 45);
   height: 90vh;
 }
 header h1 {
@@ -337,7 +345,7 @@ header h1 span:hover {
 header h2 {
   text-transform: uppercase;
   position: relative;
-  font-family: "Roboto";
+  font-family: "baloo";
   font-size: 2rem;
   letter-spacing: 5px;
   margin-top: 80px;
@@ -403,15 +411,6 @@ header .header-bot .description #competences {
   padding: 50px 0;
   text-align: center;
 }
-.a-propos .a-propos-content h2 {
-  position: relative;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  color: rgb(45, 45, 45);
-  font-family: "white on black";
-  font-size: 3rem;
-  letter-spacing: normal;
-}
 
 footer {
   text-align: center;
@@ -450,16 +449,10 @@ footer .footer-container ul li a {
 
 .projets {
   overflow: hidden;
-  background: rgb(45, 45, 45);
+  background: #F5F5F5;
   color: whitesmoke;
   text-align: center;
   padding: 50px 0;
-}
-.projets .projets-titles h2 {
-  font-family: "white on black";
-  font-size: 4rem;
-  padding: 0 0 50px 0;
-  letter-spacing: normal;
 }
 .projets #projet-container {
   max-width: 1000px;
