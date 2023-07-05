@@ -44,29 +44,7 @@ html {
 }
 * body a {
   text-decoration: none;
-  z-index: 20;
   position: relative;
-}
-
-.mouse {
-  height: 15px;
-  width: 15px;
-  background: yellowgreen;
-  border-radius: 50px;
-  position: absolute;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-}
-
-.mouse-follow {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background: rgba(153, 205, 50, 0.2);
-  position: absolute;
-  transition: 0.2s ease-out;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 #go-top {
@@ -181,7 +159,7 @@ nav ul .underline {
   height: 40vw;
   max-height: 450px;
   min-height: 350px;
-  transition: 1s;
+  transition: 0.2s;
   border-radius: 20px;
 }
 @media screen and (max-width: 550px) {
@@ -193,10 +171,22 @@ nav ul .underline {
   }
 }
 .card:hover {
+  padding: 0;
   box-shadow: 0px 0px 20px 20px whitesmoke;
 }
+.card:hover h3 {
+  display: none;
+}
+.card:hover .mini-description {
+  opacity: 0;
+}
+.card:hover .description {
+  opacity: 1;
+  display: block;
+}
 .card h3 {
-  z-index: 20;
+  position: relative;
+  z-index: 10;
   font-family: "white on black";
   font-size: 2rem;
   margin: 50px;
@@ -209,36 +199,54 @@ nav ul .underline {
   }
 }
 .card img {
-  z-index: 10;
+  position: absolute;
   border-radius: 20px;
   overflow: hidden;
   width: 100%;
   height: 100%;
-  display: none;
   top: 0;
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
-.card .link {
-  z-index: 20;
+.card .mini-description {
+  position: relative;
+  z-index: 10;
   background: rgba(5, 5, 5, 0.5);
+  margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.card .description {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(5, 5, 5, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  opacity: 0;
+  display: none;
 }
 .card p {
-  margin: 20px auto;
-  width: 80%;
+  margin: 20px;
+  text-align: justify;
+  position: relative;
+  z-index: 10;
 }
 .card h4 {
+  position: relative;
+  z-index: 10;
   font-size: 1.1rem;
 }
 .card ul {
+  position: relative;
+  z-index: 10;
   margin: 20px 0;
   display: flex;
   justify-content: center;

@@ -48,7 +48,6 @@ $black1: rgb(45, 45, 45);
 
     a {
       text-decoration: none;
-      z-index: 20;
       position: relative;
     }
 
@@ -56,28 +55,6 @@ $black1: rgb(45, 45, 45);
   }
 }
 
-.mouse {
-  height: 15px;
-  width: 15px;
-  background: yellowgreen;
-  //   mix-blend-mode: multiply;
-  border-radius: 50px;
-  position: absolute;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-}
-
-.mouse-follow {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background: rgba(153, 205, 50, 0.20);
-  //   mix-blend-mode: multiply;
-  position: absolute;
-  transition: 0.2s ease-out;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
 
 #go-top {
   content: "";
