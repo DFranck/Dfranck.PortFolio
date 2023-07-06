@@ -42,8 +42,7 @@ header{
     span{
       transition: .2s;
       &:hover{
-        color: yellowgreen;
-        background: whitesmoke;
+        // color: yellowgreen;
         transform: scale(1.5);
         animation: shakeLetter 1s cubic-bezier(.36,.07,.19,.97) both;
       }

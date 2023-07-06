@@ -37,9 +37,10 @@ $accent2: rgba(215, 46, 167);
   list-style-type: none;
   
   body {
+    height: 100vh;
     user-select: none;
     font-family: opensans, sans-serif;
-    background: whitesmoke;
+    // background: url(../img/Background.jpg) center/cover fixed ;
     position: relative;
     section{
       margin-bottom: 100px;
@@ -53,6 +54,9 @@ $accent2: rgba(215, 46, 167);
       font-size: 4rem;
       padding: 50px 0 100px 0;
       letter-spacing: normal;
+      @media screen and (max-width: 550px) {
+        font-size: 2rem;
+      }
     }
     p {
       text-align: justify;
@@ -65,6 +69,7 @@ $accent2: rgba(215, 46, 167);
 
       @media screen and (max-width: 550px) {
         font-size: 0.8rem;
+        line-height: 1.5rem;
       }
     }
 
