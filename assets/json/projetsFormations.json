@@ -1,5 +1,14 @@
 [
     {
+        "titre": "plopyBird",
+        "image": "./assets/img/Plopybird.jpg",
+        "formation":"FromScratch",
+        "description": "Petit jeu copie de flappybird en Vanilla Javascript",
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "lienGitHub": "https://github.com/DFranck/FlappyBirdApp",
+        "lienProjet": "https://dfranck.github.io/FlappyBirdApp/"
+      },
+    {
       "titre": "ohmyfood",
       "image": "./assets/img/ohmyfood.jpg",
       "formation":"OpenClassromm",
