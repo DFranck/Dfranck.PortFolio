@@ -1,7 +1,7 @@
 [
     {
         "titre": "plopyBird",
-        "image": "./assets/img/Plopybird.jpg",
+        "image": "./assets/img/Plopybird.jpeg",
         "formation":"FromScratch",
         "description": "Petit jeu copie de flappybird en Vanilla Javascript",
         "technologies": ["HTML", "CSS", "Javascript"],
