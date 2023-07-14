@@ -3,7 +3,7 @@
         "titre": "plopyBird",
         "image": "./assets/img/Plopybird.jpeg",
         "formation":"FromScratch",
-        "description": "Petit jeu copie de flappybird en Vanilla Javascript",
+        "description": "Petit jeu en Vanilla Javascript, une copie de flappybird. J'ai ajouté la possibilité de régler certain parametre pour adapter la difficulté ou juste s'adapter au divice utilisé.",
         "technologies": ["HTML", "CSS", "Javascript"],
         "lienGitHub": "https://github.com/DFranck/FlappyBirdApp",
         "lienProjet": "https://dfranck.github.io/FlappyBirdApp/"
