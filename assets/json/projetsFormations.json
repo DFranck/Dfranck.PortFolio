@@ -1,4 +1,14 @@
 [
+  
+  {
+        "titre": "Premier Projet React",
+        "image": "./assets/img/Firstreact.jpg",
+        "formation":"FromScratch",
+        "description": "Premier projet en react, une petite appli qui fait appel a une API de pays.",
+        "technologies": ["HTML", "CSS", "React JS"],
+        "lienGitHub": "https://github.com/DFranck/First_React",
+        "lienProjet": "https://first-react-d-franck.netlify.app/"
+      },
     {
         "titre": "plopyBird",
         "image": "./assets/img/Plopybird.jpeg",
