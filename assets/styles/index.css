@@ -359,11 +359,12 @@ header h1 span:nth-child(7) {
   }
 }
 header h1 span {
-  transition: 0.2s;
+  transition: 2s;
 }
 header h1 span:hover {
+  color: yellowgreen;
   transform: scale(1.5);
-  animation: shakeLetter 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transition: 0.2s;
 }
 header h2 {
   padding: 0;

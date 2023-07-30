@@ -40,11 +40,12 @@ header{
 
     }
     span{
-      transition: .2s;
+      transition: 2s;
       &:hover{
-        // color: yellowgreen;
+        color: yellowgreen;
         transform: scale(1.5);
-        animation: shakeLetter 1s cubic-bezier(.36,.07,.19,.97) both;
+        transition: .2s;
+        // animation: shakeLetter 1s cubic-bezier(.36,.07,.19,.97) both;
       }
     }
     
