@@ -183,7 +183,7 @@ nav ul li a i {
   max-height: 450px;
   min-height: 350px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 1s;
 }
 @media screen and (max-width: 550px) {
   .card {
@@ -194,6 +194,7 @@ nav ul li a i {
   }
 }
 .card:hover {
+  transition: 0.5s;
   padding: 0;
   box-shadow: 0px 0px 20px 20px rgb(154, 205, 50);
 }
@@ -362,7 +363,7 @@ header h1 span {
   transition: 2s;
 }
 header h1 span:hover {
-  color: yellowgreen;
+  color: #F5F5F5;
   transform: scale(1.5);
   transition: 0.2s;
 }
