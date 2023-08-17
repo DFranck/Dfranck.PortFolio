@@ -7,7 +7,7 @@
         "description": "Créez un site accessible pour une plateforme de photographes.",
         "technologies": ["HTML", "CSS", "Javascript", "EsLint", "Accessibility"],
         "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet6",
-        "lienProjet": "https://dfranck.github.io/Formation-OpenClassroom-Projet6/"
+        "lienProjet": "https://fishereye.netlify.app"
       },
   {
         "titre": "Premier Projet React",
