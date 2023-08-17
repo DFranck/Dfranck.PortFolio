@@ -2,7 +2,7 @@
   
   {
         "titre": "Fisheye",
-        "image": "./assets/img/Fisheye.png",
+        "image": "./assets/img/Fisheye.jpg",
         "formation":"OpenClassromm",
         "description": "Créez un site accessible pour une plateforme de photographes.",
         "technologies": ["HTML", "CSS", "Javascript", "EsLint", "Accessibility"],
