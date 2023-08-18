@@ -5,7 +5,7 @@
         "image": "./assets/img/Fisheye.jpg",
         "formation":"OpenClassromm",
         "description": "Créez un site accessible pour une plateforme de photographes.",
-        "technologies": ["HTML", "CSS", "Javascript", "EsLint", "Accessibility"],
+        "technologies": ["HTML", "CSS", "Javascript", "EsLint", "WCAG"],
         "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet6",
         "lienProjet": "https://fishereye.netlify.app"
       },

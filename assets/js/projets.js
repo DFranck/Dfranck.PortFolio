@@ -15,7 +15,7 @@ fetch("assets/json/projetsFormations.json")
       <img src="${projet.image}" alt="${projet.titre}" class="projet-image">
       <h3 class="projet-titre">${projet.titre}</h3>
       <div class="mini-description">
-      <h4>Technologies utilisées:</h4>
+      <h4>Technologies & Compétances</h4>
       <ul class="projet-technologies"> 
       ${projet.technologies.map((tech) => `<li>${tech}</li>`).join("")}
       </ul>

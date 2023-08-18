@@ -240,6 +240,7 @@ nav ul li a i {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 80%;
   padding: 20px;
   border-radius: 20px;
   opacity: 1;
